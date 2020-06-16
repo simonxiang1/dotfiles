@@ -1,0 +1,4 @@
+Jun 09 10:39:05 host=smtp.zoho.com tls=on auth=on user=simonxiang@zohomail.com from=simonxiang@zohomail.com recipients=bentaylor@bentaylor.me errormsg='the server sent an empty reply' exitcode=EX_PROTOCOL
+Jun 09 10:44:05 host=smtp.zoho.com tls=on auth=on user=simonxiang@zohomail.com from=simonxiang@zohomail.com recipients=bentaylor@bentaylor.me errormsg='the server sent an empty reply' exitcode=EX_PROTOCOL
+Jun 09 11:03:02 host=smtp.zoho.com tls=on auth=on user=simonxiang@zohomail.com from=simonxiang@zohomail.com recipients=bentaylor@bentaylor.me mailsize=1248 smtpstatus=250 smtpmsg='250 Message received' exitcode=EX_OK
+Jun 09 11:03:05 host=smtp.zoho.com tls=on auth=on user=simonxiang@zohomail.com from=simonxiang@zohomail.com recipients=bentaylor@bentaylor.me errormsg='the server sent an empty reply' exitcode=EX_PROTOCOL

@@ -1,0 +1,68 @@
+{
+   "+8eZFvHwYjj7qkZwe4sAOcWS2U8ueR90H40GmqEg6gM=": {
+      "expiry": 1606784018.58416,
+      "mode": "force-https",
+      "sts_include_subdomains": true,
+      "sts_observed": 1591232018.584166
+   },
+   "23S4wO/a7qwMShn5JqP9FSKBzxlhG/GKe3gcLpKKHPU=": {
+      "expiry": 1606784998.268462,
+      "mode": "force-https",
+      "sts_include_subdomains": true,
+      "sts_observed": 1591232998.268491
+   },
+   "F7/+zp5vrnMGpacwWTYm/zH56F6WNWsTcuV2GLAD0v8=": {
+      "expiry": 1606784997.055124,
+      "mode": "force-https",
+      "sts_include_subdomains": true,
+      "sts_observed": 1591232997.055126
+   },
+   "IIE34Xn/AiDsEkEEmBFycIUuQHZfxgMkWecNtG6lEno=": {
+      "expiry": 1606784998.261561,
+      "mode": "force-https",
+      "sts_include_subdomains": true,
+      "sts_observed": 1591232998.261562
+   },
+   "OJDDXdRlpUypduIFOsKiSHyYML6HTE+r+A/jrMTxd80=": {
+      "expiry": 1622769023.821406,
+      "mode": "force-https",
+      "sts_include_subdomains": true,
+      "sts_observed": 1591233023.821408
+   },
+   "P5r1uhLnjGSnge9pWxDwwEcWw0v1iSvOuWFkcIKY8AI=": {
+      "expiry": 1606758744.165349,
+      "mode": "force-https",
+      "sts_include_subdomains": true,
+      "sts_observed": 1591206744.165351
+   },
+   "RP6eADtV43C4IKH61jPLzu/pnjD1piWrEi38trdEimY=": {
+      "expiry": 1606752702.115287,
+      "mode": "force-https",
+      "sts_include_subdomains": true,
+      "sts_observed": 1591200702.11529
+   },
+   "T/I+tK2wxqhDs5ylhjdB8EK0Brwn/qDszlCRj+R4RCU=": {
+      "expiry": 1606759039.930115,
+      "mode": "force-https",
+      "sts_include_subdomains": true,
+      "sts_observed": 1591207039.930116
+   },
+   "VQxWgJz874hfVtYNK/OuUpmmm/kCsy1WGOAFr4R5Ecw=": {
+      "expiry": 1606667572.572368,
+      "mode": "force-https",
+      "sts_include_subdomains": true,
+      "sts_observed": 1591115572.57237
+   },
+   "kYxWDeIDVgesBS02XkmPRTIpB0nkimBvKZESXctn8eA=": {
+      "expiry": 1622391825.263283,
+      "mode": "force-https",
+      "sts_include_subdomains": false,
+      "sts_observed": 1590855825.263287
+   },
+   "wmV7bNCcLePq9vG+Xr4n8V+40cbB6ldLX/j7kalDLjk=": {
+      "expiry": 1606336860.712923,
+      "mode": "force-https",
+      "sts_include_subdomains": true,
+      "sts_observed": 1590784860.71293
+   }
+}
