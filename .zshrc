@@ -17,8 +17,18 @@ compinit
 #aliases
 alias yta="noglob youtube-dl --extract-audio --audio-format mp3 -o '%(title)s.%(ext)s'"
 alias youtube-dl="noglob youtube-dl"
-alias lsa="ls -a"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias gc="git clone"
+alias gls="git status" #git ls
+alias gc="git commit"
+alias gcm="git commit -m"
+alias gpos="git push origin master"
+alias gad="git add"
+alias gadall="git add -A" #git add all
+alias gadupd="git add -u" #git add updated files
+alias lsl="ls | less"
+alias lsg="ls | grep"
+alias lsa="ls -a"
 
 #functions
 cs() { cd "$1" && ls; }
