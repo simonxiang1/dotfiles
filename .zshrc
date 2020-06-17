@@ -29,6 +29,7 @@ alias gadupd="git add -u" #git add updated files
 alias lsl="ls | less"
 alias lsg="ls | grep"
 alias lsa="ls -a"
+alias bkg="feh --bg-scale --no-fehbg" #setting wallpapers manually
 
 #functions
 cs() { cd "$1" && ls; }
