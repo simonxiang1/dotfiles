@@ -1,14 +1,3 @@
 !!Hi-dpi solution
 Xft.dpi: 132
 
-!! Appearance
-urxvt.termName: rxvt-unicode
-urxvt.scrollBar: false
-urxvt.background: black
-urxvt.foreground: white
-
-!! Font prefferenes
-URxvt*font: xft:Iosevka:style=Regular:pixelsize=21:antialias=true,\
-            xft:Sazanami Mincho:style=Regular:pixelsize=19:antialias=true
-urxvt.boldFont: xft:Iosevka:pixelsize=19:weight=bold
-urxvt.letterSpace: 1
