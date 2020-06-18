@@ -19,8 +19,8 @@ export PATH="${PATH}:${HOME}/.local/bin/" #allows me to run pywal
 
 #aliases
 alias yta="noglob youtube-dl --extract-audio --audio-format mp3 -o '%(title)s.%(ext)s'"
-alias youtube-dl="noglob youtube-dl"
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias ytv="noglob youtube-dl" #noglob for zsh links, -o for nice file names
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME' #bare git repo
 alias gc="git clone"
 alias gls="git status" #git ls
 alias gc="git commit"
@@ -29,12 +29,13 @@ alias gpos="git push origin master"
 alias gad="git add"
 alias gadall="git add -A" #git add all
 alias gadupd="git add -u" #git add updated files
-alias lsl="ls | less"
-alias lsg="ls | grep"
+alias smic="sudo make install clean"
+alias lsl="ls | less" #maybe remove after patching in scrollback
+alias lsg="ls | grep" #requires output
 alias lsa="ls -a"
 alias newtheme="wal -i ~/Desktop/personal/anime/wallpaper_selections" #randomizes bg and sets new theme with pywal
 alias newthemelight=" wal -li ~/Desktop/personal/anime/wallpaper_selections" #newtheme, but light mode
 
 #functions
-cs() { cd "$1" && ls; }
-csa() { cd "$1" && ls -a; }
+cs() { cd "$1" && ls; } #cd then ls
+csa() { cd "$1" && ls -a; } #cd then ls -a
