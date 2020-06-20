@@ -30,11 +30,11 @@ alias gad="git add"
 alias gadall="git add -A" #git add all
 alias gadupd="git add -u" #git add updated files
 alias smic="sudo make install clean"
-alias lsl="ls | less" #maybe remove after patching in scrollback
 alias lsg="ls | grep" #requires output
 alias lsa="ls -a"
 alias newtheme="wal -i ~/Desktop/personal/anime/wallpaper_selections" #randomizes bg and sets new theme with pywal
 alias newthemelight=" wal -li ~/Desktop/personal/anime/wallpaper_selections" #newtheme, but light mode
+alias fullbackup="sudo rsync -rvz --delete ~/ /run/media/simon/info" #makes local backup of home directory: -r for recursive, -v for verbose, -z for compression, --delete to delete files on backup not on local (mirror image)
 
 #functions
 cs() { cd "$1" && ls; } #cd then ls
