@@ -4,7 +4,7 @@ HISTSIZE=100
 SAVEHIST=1000
 setopt autocd extendedglob nomatch notify
 unsetopt beep
-bindkey -v
+bindkey -v #vim bindings are superior
 # End of lines configured by zsh-newuser-install
 
 # The following lines were added by compinstall
@@ -29,6 +29,7 @@ alias gpos="git push origin master"
 alias gad="git add"
 alias gadall="git add -A" #git add all
 alias gadupd="git add -u" #git add updated files
+alias glog="git log --oneline" #will change to something better soon
 alias smic="sudo make install clean"
 alias lsg="ls | grep" #requires output
 alias lsa="ls -a"
