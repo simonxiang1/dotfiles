@@ -1,7 +1,7 @@
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
-HISTSIZE=100
-SAVEHIST=1000
+HISTSIZE=10000
+SAVEHIST=10000
 setopt autocd extendedglob nomatch notify
 unsetopt beep
 bindkey -v #vim bindings are superior
@@ -18,6 +18,9 @@ export PATH="${PATH}:${HOME}/.local/bin/" #allows me to run pywal
 (cat ~/.cache/wal/sequences &) #more pywal support
 
 source ~/Downloads/powerlevel10k/powerlevel10k.zsh-theme #powerlevel10k
+source ~/Downloads/zsh-autosuggestions/zsh-autosuggestions.zsh #zsh auto-suggestions
+source ~/Downloads/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh #zsh syntax-highlighting
+
 
 #aliases
 alias yta="noglob youtube-dl --extract-audio --audio-format mp3 -o '%(title)s.%(ext)s'"
