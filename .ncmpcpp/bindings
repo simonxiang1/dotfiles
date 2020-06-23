@@ -15,6 +15,8 @@ def_key "h"
     previous_column
 def_key "l"
     next_column
+def_key "l"
+    play_item
 
 def_key "n"
     next_found_item
@@ -33,7 +35,7 @@ def_key "G"
   move_end
 def_key "g"
   move_home
-def_key "u"
+def_key "U"
   update_database
 def_key "s"
   reset_search_engine
@@ -46,4 +48,4 @@ def_key "f"
 def_key "x"
   delete_playlist_items
 def_key "P"
-  show_playlist
+  show_playlist_editor
