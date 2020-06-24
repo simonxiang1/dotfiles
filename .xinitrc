@@ -7,13 +7,10 @@ export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 fcitx & sleep 2
 
-# bluetooth autoconnect
-pavucontrol &
-
 # notifications
 dunst &
 
-# this will work??
+# works!!!!
 wal -i "/home/simon/Desktop/personal/anime/wallpaper_selections"
 
 # start dwm

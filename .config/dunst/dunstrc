@@ -81,7 +81,7 @@
     always_run_script = true
     title = Dunst
     class = Dunst
-    startup_notification = true
+    startup_notification = false
     force_xinerama = false
 
     mouse_left_click = close_current
