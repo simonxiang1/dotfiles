@@ -10,6 +10,9 @@ fcitx & sleep 2
 # bluetooth autoconnect
 pavucontrol &
 
+# notifications
+dunst &
+
 # start dwm
 exec dwm
 
