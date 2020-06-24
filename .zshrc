@@ -1,7 +1,7 @@
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
-HISTSIZE=10000
-SAVEHIST=10000
+HISTSIZE=1000
+SAVEHIST=1000
 setopt autocd extendedglob nomatch notify
 unsetopt beep
 bindkey -v #vim bindings are superior
@@ -14,8 +14,8 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-export PATH="${PATH}:${HOME}/.local/bin/" #allows me to run pywal
-(cat ~/.cache/wal/sequences &) #more pywal support
+# export PATH="${PATH}:${HOME}/.local/bin/" #allows me to run pywal
+(cat ~/.cache/wal/sequences &) # pywal support
 
 source ~/Downloads/powerlevel10k/powerlevel10k.zsh-theme #powerlevel10k
 source ~/Downloads/zsh-autosuggestions/zsh-autosuggestions.zsh #zsh auto-suggestions

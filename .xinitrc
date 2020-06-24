@@ -13,6 +13,9 @@ pavucontrol &
 # notifications
 dunst &
 
+# this will work??
+wal -i "/home/simon/Desktop/personal/anime/wallpaper_selections"
+
 # start dwm
 exec dwm
 
