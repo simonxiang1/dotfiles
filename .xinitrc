@@ -7,9 +7,6 @@ export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 fcitx & sleep 2
 
-# notifications
-dunst &
-
 # works!!!!
 wal -i "/home/simon/Desktop/personal/anime/wallpaper_selections"
 
