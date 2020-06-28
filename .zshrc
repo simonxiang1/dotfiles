@@ -49,5 +49,22 @@ alias fullbackup="sudo rsync -rvz --delete ~/ /run/media/simon/info" #makes loca
 cs() { cd "$1" && ls; } #cd then ls
 csa() { cd "$1" && ls -a; } #cd then ls -a
 
+# nnn cd to directory on quit
+n ()
+{
+	if [ -n $NNNLVL ] && [ "${NNNLVL:-0}" -ge 1 ]; then
+		echo "nnn is already running"
+		return 
+	fi
+
+	export NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
+	nnn "$@"
+
+	if [ -f "$NNN_TMPFILE" ]; then
+		. "$NNN_TMPFILE"
+		rm -f "$NNN_TMPFILE" > /dev/null
+	fi
+}
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

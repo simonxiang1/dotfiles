@@ -4,4 +4,3 @@ visualizer_sync_interval = "30"
 visualizer_in_stereo = "yes"
 visualizer_type = "spectrum"
 visualizer_look = "||"
-
