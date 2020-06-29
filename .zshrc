@@ -26,6 +26,7 @@ ZSH_HIGHLIGHT_STYLES[path]=none
 ZSH_HIGHLIGHT_STYLES[path_prefix]=none #remove underlines
 
 #aliases
+alias vim="nvim" #neovim
 alias yta="noglob youtube-dl --extract-audio --audio-format mp3 -o '%(title)s.%(ext)s'" #noglob for zsh links, -o for nice file names, a for audio, v for video
 alias ytv="noglob youtube-dl"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME' #bare git repo
