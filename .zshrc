@@ -41,11 +41,15 @@ alias smic="sudo make install clean"
 alias lsg="ls | grep -i" #case insensitive search from output
 alias lsa="ls -a" #list all
 alias cp="cp -vi" #verbose cp
-alias newtheme="wal -i ~/Desktop/personal/anime/wallpaper_selections" #randomizes bg and sets new theme with pywal
-alias newthemelight=" wal -li ~/Desktop/personal/anime/light_wallpapers" #newtheme, but light mode
 alias fullbackup="sudo rsync -rvz --delete ~/ /run/media/simon/info" #makes local backup of home directory: -r for recursive, -v for verbose, -z for compression, --delete to delete files on backup not on local (mirror image)
+alias newtheme="wal -i ~/Desktop/personal/anime/wallpaper_selections" #randomizes bg and sets new theme with pywal
+alias newthemelight="wal -li ~/Desktop/personal/anime/light_wallpapers" #newtheme, but light mode
 
 #functions
+themenord() { 
+	wal --theme "base16-nord" &&
+	xwallpaper --zoom "/home/simon/Desktop/personal/anime/wallpaper_selections/nord_ocean_jellyfish.png";
+} #set colorscheme to nord
 cs() { cd "$1" && ls; } #cd then ls
 csa() { cd "$1" && ls -a; } #cd then ls -a
 n () # nnn cd to directory on quit
