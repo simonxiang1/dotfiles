@@ -31,7 +31,6 @@ alias ytv="noglob youtube-dl"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME' #bare git repo
 alias gc="git clone"
 alias gls="git status" #git ls
-alias gc="git commit"
 alias gcm="git commit -m"
 alias gpos="git push origin master"
 alias gad="git add"
@@ -49,9 +48,7 @@ alias fullbackup="sudo rsync -rvz --delete ~/ /run/media/simon/info" #makes loca
 #functions
 cs() { cd "$1" && ls; } #cd then ls
 csa() { cd "$1" && ls -a; } #cd then ls -a
-
-# nnn cd to directory on quit
-n ()
+n () # nnn cd to directory on quit
 {
 	if [ -n $NNNLVL ] && [ "${NNNLVL:-0}" -ge 1 ]; then
 		echo "nnn is already running"
