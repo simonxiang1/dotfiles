@@ -14,8 +14,8 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-# export PATH="${PATH}:${HOME}/.local/bin/" #allows me to run pywal
 (cat ~/.cache/wal/sequences &) # pywal support
+export PATH="/home/simon/.local/bin:$PATH" # zathura pywal
 
 source ~/Downloads/powerlevel10k/powerlevel10k.zsh-theme #powerlevel10k
 source ~/Downloads/zsh-autosuggestions/zsh-autosuggestions.zsh #zsh auto-suggestions
@@ -47,12 +47,13 @@ alias ut="cs ~/Desktop/academic/ut_austin"
 alias tb="cs ~/Desktop/academic/textbooks"
 alias help="vim ~/Desktop/personal/information/linux_setup/common_terminal_commands.txt"
 alias todo="vim ~/Desktop/personal/information/linux_setup/todo_list.txt"
+alias bookmarks="vim ~/Desktop/personal/information/general/useful_links.txt"
 alias fullbackup="sudo rsync -rvz --delete ~/ /run/media/simon/info" #makes local backup of home directory: -r for recursive, -v for verbose, -z for compression, --delete to delete files on backup not on local (mirror image)
 alias newtheme="wal -i ~/Desktop/personal/anime/wallpaper_selections" #randomizes bg and sets new theme with pywal
 alias newthemelight="wal -li ~/Desktop/personal/anime/light_wallpapers" #newtheme, but light mode
 
 #functions
-themenord() { 
+nord() { 
 	wal --theme "base16-nord" &&
 	xwallpaper --zoom "/home/simon/Desktop/personal/anime/wallpaper_selections/nord_ocean_jellyfish.png";
 } #set colorscheme to nord
