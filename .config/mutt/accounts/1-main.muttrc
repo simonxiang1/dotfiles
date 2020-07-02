@@ -9,11 +9,11 @@ set header_cache = /home/simon/.cache/mutt-wizard/main/headers
 set message_cachedir = /home/simon/.cache/mutt-wizard/main/bodies
 set mbox_type = Maildir
 
-set editor = "vim"
+set editor = "nvim"
 
-set crypt_autosign = yes
-set crypt_opportunistic_encrypt = yes
-set pgp_self_encrypt = yes
+set crypt_autosign = yes 
+set crypt_opportunistic_encrypt = yes 
+set pgp_self_encrypt = yes 
 set pgp_default_key  = 
 
 bind index,pager gg noop

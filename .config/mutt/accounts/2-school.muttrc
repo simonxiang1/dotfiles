@@ -9,6 +9,8 @@ set header_cache = /home/simon/.cache/mutt-wizard/school/headers
 set message_cachedir = /home/simon/.cache/mutt-wizard/school/bodies
 set mbox_type = Maildir
 
+set editor = "nvim"
+
 set crypt_autosign = yes
 set crypt_opportunistic_encrypt = yes
 set pgp_self_encrypt = yes
