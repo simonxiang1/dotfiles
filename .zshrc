@@ -1,3 +1,9 @@
+#    _   ___
+#   / | / (_)_______
+#  /  |/ / / ___/ _ \
+# / /|  / / /__/  __/
+#/_/ |_/_/\___/\___/
+
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
