@@ -13,12 +13,13 @@ alias ytv="noglob youtube-dl"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME' #bare git repo
 alias gls="git status" #git ls
 alias gcm="git commit -m"
-alias gpos="git push origin master"
+alias gpos="git remote | xargs -L1 git push master" #push all remote repos
 alias gad="git add"
 alias gadall="git add -A" #git add all
 alias gadupd="git add -u" #git add updated files
 alias glog="git log --oneline" #will change to something better soon
 alias smic="sudo make install clean" #very useful for compiling suckless utilities
+#final form is gacmp - git add commit push and gucmp/cucmp (gacmp with update, config gucmp for dotfiles), see /local/bin
 
 #common commands
 alias ls="ls -h --group-directories-first" #cool ls
