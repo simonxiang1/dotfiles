@@ -1,9 +1,3 @@
-    #_   ___
-   #/ | / (_)_______
-  #/  |/ / / ___/ _ \
- #/ /|  / / /__/  __/
-#/_/ |_/_/\___/\___/
-
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -22,6 +16,7 @@ compinit
 
 (cat ~/.cache/wal/sequences &) # pywal support
 export PATH="/home/simon/.local/bin:$PATH" # zathura pywal
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket" #ssh-agent 
 
 source ~/Downloads/powerlevel10k/powerlevel10k.zsh-theme #powerlevel10k
 source ~/Downloads/zsh-autosuggestions/zsh-autosuggestions.zsh #zsh auto-suggestions

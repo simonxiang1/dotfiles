@@ -13,3 +13,4 @@ call plug#end()
 
 colorscheme wal 
 set rnu
+set nu
