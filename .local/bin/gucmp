@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Adds all files, commits, and pushes (very simple script)
+echo Enter commit message: 
+read commit
+git add -u && git commit -m "$commit" && git push home master && git push origin master
