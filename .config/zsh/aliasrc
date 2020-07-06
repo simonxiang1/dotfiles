@@ -27,6 +27,7 @@ alias lsg="ls | grep -i" #case insensitive search from output
 alias lsa="ls -a" #list all
 alias cp="cp -v" #verbose cp
 alias rm="rm -vI" #I've lost many things before
+alias z="zathura" #thank the heavens
 
 #going to places faster
 alias mus="cs ~/Desktop/personal/music" #cs is defined later
