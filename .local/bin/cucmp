@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Adds all files, commits, and pushes dotfiles (very simple script)
+# Updates all files, commits, and pushes dotfiles (very simple script)
 echo Enter commit message: 
 read commit
 /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME add -u && /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME commit -m "$commit" && /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME push home master && /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME push origin master
