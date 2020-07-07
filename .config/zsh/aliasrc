@@ -48,24 +48,10 @@ alias library="vim ~/Desktop/personal/books/books_read.txt"
 #backing up 
 alias fullbackup="sudo rsync -rvz --delete ~/ /run/media/simon/info" #makes local backup of home directory: -r for recursive, -v for verbose, -z for compression, --delete to delete files on backup not on local (mirror image)
 
-#setting pretty themes
-alias newtheme="wal -i ~/Desktop/personal/anime/wallpaper_selections" #randomizes bg and sets new theme with pywal
-alias newthemelight="wal -li ~/Desktop/personal/anime/light_wallpapers" #newtheme, but light mode
-
 #FUNCTIONS
-
-#nord theme
-nord() { 
-	wal --theme "base16-nord" &&
-	xwallpaper --zoom "/home/simon/Desktop/personal/anime/wallpaper_selections/nord_ocean_jellyfish.png";
-} 
-
 #moving around
 cs() { cd "$1" && ls; } #cd then ls
 csa() { cd "$1" && ls -a; } #cd then ls -a
-
-#git management
-cpos() {config push origin master && config push home master;} #push all dotfiles
 
 #nnn cd to directory on quit
 n () 

@@ -1,0 +1,8 @@
+#!/bin/sh
+# Updates the wallpaper and theme with pywal
+wal -li ~/Desktop/personal/anime/wallpaper_selections
+
+# st looks horrible without restarting instances, so ...
+echo Are you sure you want to close all instances of st?
+read oksure
+killall st

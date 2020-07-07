@@ -1,0 +1,8 @@
+#!/bin/sh
+# Updates the wallpaper and theme with pywal
+wal -i ~/Desktop/personal/anime/wallpaper_selections
+
+# updates firefox theme if running (if not, update it yourself you lazy bum)
+if [ -n "$(pidof firefox)" ]; then
+    pywalfox update
+fi

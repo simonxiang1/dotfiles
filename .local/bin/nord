@@ -1,0 +1,11 @@
+#!/bin/sh
+# Sets the background and colorscheme to nord
+
+wal --theme "base16-nord"
+feh --bg-scale "/home/simon/Desktop/personal/anime/wallpaper_selections/nord_ocean_jellyfish.png"
+
+# updates firefox theme if running (if not, update it yourself you lazy bum)
+if [ -n "$(pidof firefox)" ]; then
+    pywalfox update
+fi
+
