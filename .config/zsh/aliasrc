@@ -17,6 +17,7 @@ alias gpos="git remote | xargs -L1 git push master" #push all remote repos
 alias gad="git add"
 alias gadall="git add -A" #git add all
 alias gadupd="git add -u" #git add updated files
+#gacmp and gucmp make these aliases irrelevant, see below
 alias glog="git log --oneline" #will change to something better soon
 alias smic="sudo make install clean" #very useful for compiling suckless utilities
 #final form is gacmp - git add commit push and gucmp/cucmp (gacmp with update, config gucmp for dotfiles), see /local/bin
@@ -41,8 +42,8 @@ alias math="vim ~/Desktop/personal/useful_information/math_resources.txt"
 alias bk="vim ~/Desktop/personal/useful_information/useful_links.txt"
 alias blog="vim ~/Desktop/personal/useful_information/blog_posts.txt"
 alias mirai="vim ~/Desktop/personal/useful_information/future_todolist.txt"
+alias shop="vim ~/Desktop/personal/useful_information/shopping_list.txt"
 alias library="vim ~/Desktop/personal/books/books_read.txt"
-
 #backing up 
 alias fullbackup="sudo rsync -rvz --delete ~/ /run/media/simon/info" #makes local backup of home directory: -r for recursive, -v for verbose, -z for compression, --delete to delete files on backup not on local (mirror image)
 
