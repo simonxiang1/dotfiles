@@ -43,6 +43,7 @@ alias bk="vim ~/Desktop/personal/useful_information/useful_links.txt"
 alias blog="vim ~/Desktop/personal/useful_information/blog_posts.txt"
 alias mirai="vim ~/Desktop/personal/useful_information/future_todolist.txt"
 alias shop="vim ~/Desktop/personal/useful_information/shopping_list.txt"
+alias recette="vim ~/Desktop/personal/useful_information/recipes.txt"
 alias library="vim ~/Desktop/personal/books/books_read.txt"
 #backing up 
 alias fullbackup="sudo rsync -rvz --delete ~/ /run/media/simon/info" #makes local backup of home directory: -r for recursive, -v for verbose, -z for compression, --delete to delete files on backup not on local (mirror image)
