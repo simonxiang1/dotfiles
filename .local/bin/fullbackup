@@ -1,0 +1,10 @@
+#!/bin/sh
+# Fully backs up my home directory- makes a remote backup to my web server and a local backup if my hard drive is mounted
+
+if [ -d "/run/media/simon/info" ]; then
+    echo Hard drive connected. Generating local backup...
+    sudo rsync -havzP --delete ~/ /run/media/simon/info
+fi
+
+echo Generating remote backup...
+rsync -havzP --delete ~/. simon@simonxiang.xyz:/home/simon/backup
