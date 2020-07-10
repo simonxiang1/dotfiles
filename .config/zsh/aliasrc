@@ -10,10 +10,11 @@ alias yta="noglob youtube-dl --extract-audio --audio-format mp3 -o '%(title)s.%(
 alias ytv="noglob youtube-dl"
 
 #git 
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME' #bare git repo
+alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME" #bare git repo
 alias gls="git status" #git ls
+alias cls="config status"
 alias gcm="git commit -m"
-alias gpos="git remote | xargs -L1 git push master" #push all remote repos
+alias gpos="git remote | xargs -L1 git push --all" #push all remote repos
 alias gad="git add"
 alias gadall="git add -A" #git add all
 alias gadupd="git add -u" #git add updated files
@@ -34,6 +35,7 @@ alias z="zathura" #thank the heavens
 #going to places faster
 alias mus="cs ~/Desktop/personal/music" #cs is defined later
 alias vid="cs ~/Desktop/personal/videos" #but it's basically just cd -> ls
+alias web="cs ~/Desktop/personal/website"
 alias ut="cs ~/Desktop/academic/ut_austin"
 alias tb="cs ~/Desktop/academic/textbooks"
 alias help="vim ~/Desktop/personal/information/linux_setup/common_terminal_commands.txt"
@@ -45,8 +47,6 @@ alias mirai="vim ~/Desktop/personal/useful_information/future_todolist.txt"
 alias shop="vim ~/Desktop/personal/useful_information/shopping_list.txt"
 alias recette="vim ~/Desktop/personal/useful_information/recipes.txt"
 alias library="vim ~/Desktop/personal/books/books_read.txt"
-#backing up 
-alias fullbackup="sudo rsync -rvz --delete ~/ /run/media/simon/info" #makes local backup of home directory: -r for recursive, -v for verbose, -z for compression, --delete to delete files on backup not on local (mirror image)
 
 #FUNCTIONS
 #moving around
