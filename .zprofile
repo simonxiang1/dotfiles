@@ -1,8 +1,8 @@
 # setting environmental variables
 export EDITOR="nvim"
-export READER="zathura"
+export READER="Zathura"
 
 # run startx on login
-if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
+if [[ -z $DISPLAY ]]; then
 	  exec startx
 fi

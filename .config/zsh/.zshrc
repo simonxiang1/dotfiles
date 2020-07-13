@@ -8,7 +8,7 @@ bindkey -v #vim bindings are superior
 # End of lines configured by zsh-newuser-install
 
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/simon/.zshrc'
+zstyle :compinstall filename '/home/simon/.config/zsh/.zshrc'
 
 autoload -Uz compinit
 compinit

@@ -29,6 +29,7 @@ alias grep="grep --color=auto" #pretty grep
 alias lsg="ls | grep -i" #case insensitive search from output
 alias lsa="ls -a" #list all
 alias cp="cp -v" #verbose cp
+alias mv="mv -v" #same idea
 alias rm="rm -vI" #I've lost many things before
 alias z="zathura" #thank the heavens
 

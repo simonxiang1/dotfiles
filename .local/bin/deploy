@@ -1,4 +1,4 @@
 #!/bin/sh
 # Deploys website to remote server
 
-rsync -havzP ~/Desktop/personal/website/. simon@simonxiang.xyz:/var/www/simonxiang
+rsync -havzP --delete ~/Desktop/personal/website/. simon@simonxiang.xyz:/var/www/home

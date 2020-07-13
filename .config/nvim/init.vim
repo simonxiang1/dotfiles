@@ -9,6 +9,8 @@ set conceallevel=1
 let g:tex_conceal='abdmg'
 hi Conceal ctermbg=none
 Plug 'dylanaraps/wal.vim'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 call plug#end()
 
 colorscheme wal 
