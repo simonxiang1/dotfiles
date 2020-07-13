@@ -39,15 +39,11 @@ alias vid="cs ~/Desktop/personal/videos" #but it's basically just cd -> ls
 alias web="cs ~/Desktop/personal/website"
 alias ut="cs ~/Desktop/academic/ut_austin"
 alias tb="cs ~/Desktop/academic/textbooks"
-alias help="vim ~/Desktop/personal/information/linux_setup/common_terminal_commands.txt"
-alias todo="vim ~/Desktop/personal/information/linux_setup/todo_list.txt"
+alias help="vim ~/Desktop/personal/useful_information/common_terminal_commands.txt"
+alias todo="vim ~/Desktop/personal/useful_information/todo_list.txt"
 alias math="vim ~/Desktop/personal/useful_information/math_resources.txt"
 alias bk="vim ~/Desktop/personal/useful_information/useful_links.txt"
 alias blog="vim ~/Desktop/personal/useful_information/blog_posts.txt"
-alias mirai="vim ~/Desktop/personal/useful_information/future_todolist.txt"
-alias shop="vim ~/Desktop/personal/useful_information/shopping_list.txt"
-alias recette="vim ~/Desktop/personal/useful_information/recipes.txt"
-alias library="vim ~/Desktop/personal/books/books_read.txt"
 
 #FUNCTIONS
 #moving around

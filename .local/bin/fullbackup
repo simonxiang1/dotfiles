@@ -1,10 +1,16 @@
 #!/bin/sh
 # Fully backs up my home directory- makes a remote backup to my web server and a local backup if my hard drive is mounted
 
+# Updating installed packages
+pacman -Qq > /home/simon/Desktop/personal/useful_information/programs_installed.txt
+echo Manually installed programs: $(pacman -Qqe | wc - l) >> /home/simon/Desktop/personal/useful_information/programs_installed.txt
+
+# Check if hard drive connected
 if [ -d "/run/media/simon/info" ]; then
     echo Hard drive connected. Generating local backup...
     sudo rsync -havzP --delete ~/ /run/media/simon/info
 fi
 
+# Remote backup
 echo Generating remote backup...
 rsync -havzP --delete ~/. simon@simonxiang.xyz:/home/simon/backup
