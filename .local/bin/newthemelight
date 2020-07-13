@@ -1,8 +1,10 @@
 #!/bin/sh
 # Updates the wallpaper and theme with pywal
-wal -li ~/Desktop/personal/anime/wallpaper_selections
 
 # st looks horrible without restarting instances, so ...
-echo Are you sure you want to close all instances of st?
+echo This will close all instances of st. Are you sure?
 read oksure
+
+# set the wallpaper
+wal -li ~/Desktop/personal/anime/light_wallpapers/
 killall st
