@@ -61,7 +61,12 @@ $0
 endsnippet
 
 snippet mm "inline math mode" wA
-$${1}$ $0
+$${1}$`!p
+if t[2] and t[2][0] not in [',', '.', '?', '-', ' ']:
+    snip.rv = ' ' 
+else:
+    snip.rv = ''
+`$2
 endsnippet
 
 snippet eq "equation" w
