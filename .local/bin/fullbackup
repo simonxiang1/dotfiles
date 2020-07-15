@@ -8,7 +8,7 @@ echo Manually installed programs: $(pacman -Qqe | wc - l) >> /home/simon/Desktop
 # Check if hard drive connected
 if [ -d "/run/media/simon/info" ]; then
     echo Hard drive connected. Generating local backup...
-    sudo rsync -havzP --delete ~/ /run/media/simon/info
+    rsync -havzP ~/ /run/media/simon/info
 fi
 
 # Remote backup

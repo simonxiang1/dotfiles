@@ -1,0 +1,108 @@
+# Thank you to Gilles Castel, the man is a lifesaver
+
+global !p
+texMathZones = ['texMathZone' + x for x in ['A', 'AS', 'B', 'BS', 'C', 'CS', 'D', 'DS', 'E', 'ES', 'F', 'FS', 'G', 'GS', 'H', 'HS', 'I', 'IS', 'J', 'JS', 'K', 'KS', 'L', 'LS', 'DS', 'V', 'W', 'X', 'Y', 'Z', 'AmsA', 'AmsB', 'AmsC', 'AmsD', 'AmsE', 'AmsF', 'AmsG', 'AmsAS', 'AmsBS', 'AmsCS', 'AmsDS', 'AmsES', 'AmsFS', 'AmsGS' ]]
+texIgnoreMathZones = ['texMathText']
+texMathZoneIds = vim.eval('map('+str(texMathZones)+", 'hlID(v:val)')")
+texIgnoreMathZoneIds = vim.eval('map('+str(texIgnoreMathZones)+", 'hlID(v:val)')")
+ignore = texIgnoreMathZoneIds[0]
+def math():
+	synstackids = vim.eval("synstack(line('.'), col('.') - (col('.')>=2 ? 1 : 0))")
+	try:
+		first = next(i for i in reversed(synstackids) if i in texIgnoreMathZoneIds or i in texMathZoneIds)
+		return first != ignore
+	except StopIteration:
+		return False
+endglobal
+
+snippet doc "template" b
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+\begin{document}
+    $0
+\end{document}
+endsnippet
+
+snippet titlepage "title page"
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+ 
+        \Huge
+        \textbf{$1}
+ 
+        \vspace{0.5cm}
+        \LARGE
+    	$2
+
+        \vspace{1.5cm}
+ 
+        \textbf{Simon Xiang}
+ 
+        \vfill
+  
+        \vspace{0.8cm}
+ 
+        \Large
+    	$3\\\
+        University of Texas at Austin
+        \today
+ 
+    \end{center}
+\end{titlepage}
+$0
+endsnippet
+
+snippet beg "begin{} / end{}" bA
+\\begin{$1}
+    $2
+\\end{$1}
+$0
+endsnippet
+
+snippet mm "inline math mode" wA
+$${1}$ $0
+endsnippet
+
+snippet eq "equation" w
+
+\[
+$1
+\]
+$0
+endsnippet
+
+context "math()"
+snippet '([A-Za-z])(\d)' "subscript" wrA
+`!p snip.rv = match.group(1)`_`!p snip.rv = match.group(2)`
+endsnippet
+
+context "math()"
+snippet '([A-Za-z])_(\d\d)' "subscript two digits" wrA
+`!p snip.rv = match.group(1)`_{`!p snip.rv = match.group(2)`}
+endsnippet
+
+context "math()"
+snippet sr "squared" iA
+^2
+endsnippet
+
+context "math()"
+snippet cb "cubed" iA
+^3
+endsnippet
+
+context "math()"
+snippet comp "complement" iA
+^{c}
+endsnippet
+
+context "math()"
+snippet td "superscript" iA
+^{$1}$0
+endsnippet
+
+context "math()"
+snippet // "fraction" iA
+\\frac{$1}{$2}$0
+endsnippet

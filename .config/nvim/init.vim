@@ -9,9 +9,13 @@ set conceallevel=1
 let g:tex_conceal='abdmg'
 hi Conceal ctermbg=none
 Plug 'dylanaraps/wal.vim'
+Plug 'sirver/ultisnips'
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+let g:UltiSnipsSnippetDirectories = [$HOME.'/.config/nvim/snippet']
 call plug#end()
 
-autocmd FileType text,markdown,tex setlocal textwidth=80
 colorscheme wal 
 set shiftwidth=4 smartindent expandtab
 set rnu

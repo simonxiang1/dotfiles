@@ -1,0 +1,81 @@
+extends tex
+
+snippet p "paragraph" w
+
+<p>
+$1
+</p>
+
+endsnippet
+
+snippet t "tag" w
+
+<$1>
+$2
+</$1>
+$0
+endsnippet
+
+snippet in "inline tag" w
+<$1>$2</$1>$0
+endsnippet
+
+snippet i "italics" w
+<em>$1</em> $0
+endsnippet
+
+snippet b "bold" w
+<b>$1</b> $0
+endsnippet
+
+snippet ib "italics bold" w
+<em><b>$1</b></em> $0
+endsnippet
+
+snippet u "underline" w
+<u>$1</u> $0
+endsnippet
+
+snippet img "image" w
+<img src="https://simonxiang.xyz/blog/pictures/$1" alt="$2">$0
+endsnippet
+
+snippet h1 "header 1" w
+<h1>$1</h1>
+$0
+endsnippet
+
+snippet h2 "header 2" w
+<h2>$1</h2>
+$0
+endsnippet
+
+snippet h3 "header 3" w
+<h3>$1</h3>
+$0
+endsnippet
+
+snippet def "definition" bA
+<p><b><u>Definition:</u></b> $1
+</p>
+$0
+endsnippet
+
+snippet thm "theorem" bA
+<p><b><u>Theorem:</u></b> $1
+</p>
+$0
+endsnippet
+
+snippet pf "proof" bA
+<p><b><u>Proof:</u></b> $1
+</p>
+$0
+endsnippet
+
+snippet lem "lemma" bA
+<p><b><u>Lemma:</u></b> $1
+</p>
+$0
+endsnippet
+

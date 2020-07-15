@@ -1,7 +1,6 @@
 #!/bin/sh
 
 #ALIASES
-
 #more neovim support
 command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d" 
 
@@ -32,6 +31,7 @@ alias cp="cp -v" #verbose cp
 alias mv="mv -v" #same idea
 alias rm="rm -vI" #I've lost many things before
 alias z="zathura" #thank the heavens
+alias q="exit" #zoomer time
 
 #going to places faster
 alias mus="cs ~/Desktop/personal/music" #cs is defined later
