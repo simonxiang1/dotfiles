@@ -3,6 +3,6 @@ export EDITOR="nvim"
 export READER="Zathura"
 
 # run startx on login
-if [[ -z $DISPLAY ]]; then
-	  exec startx
+if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
+  exec startx
 fi
