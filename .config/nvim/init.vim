@@ -18,5 +18,4 @@ call plug#end()
 
 colorscheme wal 
 set shiftwidth=4 smartindent expandtab
-set rnu
-set nu
+set rnu nu ic
