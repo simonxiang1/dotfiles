@@ -81,6 +81,84 @@ $1
 $0
 endsnippet
 
+priority 100
+snippet ... "ldots" iA
+\ldots
+endsnippet
+
+snippet enum "enumerate" bA
+\begin{enumerate}
+    \item $0
+\end{enumerate}
+endsnippet
+
+snippet item "itemize" bA
+\begin{itemize}
+    \item $0
+\end{itemize}
+endsnippet
+
+snippet => "implies" Ai
+\implies
+endsnippet
+
+snippet <= "implied by" Ai
+\impliedby
+endsnippet
+
+context "math()"
+snippet iff "if and only if" Ai
+\iff
+endsnippet
+
+context "math()"
+snippet ceil "ceil" iA
+\left\lceil $1 \right\rceil $0
+endsnippet
+
+context "math()"
+snippet floor "floor" iA
+\left\lfloor $1 \right\rfloor$0
+endsnippet
+
+context "math()"
+snippet () "left( right)" iA
+\left( ${1:${VISUAL}} \right) $0
+endsnippet
+
+snippet lr "left( right)" i
+\left( ${1:${VISUAL}} \right) $0
+endsnippet
+
+snippet lr( "left( right)" i
+\left( ${1:${VISUAL}} \right) $0
+endsnippet
+
+snippet lr| "left| right|" i
+\left| ${1:${VISUAL}} \right| $0
+endsnippet
+
+snippet lr{ "left\{ right\}" i
+\left\\{ ${1:${VISUAL}} \right\\} $0
+endsnippet
+
+snippet lrb "left\{ right\}" i
+\left\\{ ${1:${VISUAL}} \right\\} $0
+endsnippet
+
+snippet lr[ "left[ right]" i
+\left[ ${1:${VISUAL}} \right] $0
+endsnippet
+
+snippet lra "leftangle rightangle" iA
+\left<${1:${VISUAL}} \right>$0
+endsnippet
+
+context "math()"
+snippet sq "\sqrt{}" iA
+\sqrt{${1:${VISUAL}}} $0
+endsnippet
+
 context "math()"
 snippet sr "squared" iA
 ^2
