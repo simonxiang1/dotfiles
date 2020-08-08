@@ -5,6 +5,8 @@
 pacman -Qq > /home/simon/Desktop/personal/useful_information/programs_installed.txt
 echo Manually installed programs: $(pacman -Qqe | wc - l) >> /home/simon/Desktop/personal/useful_information/programs_installed.txt
 
+# Check if phone connected, then sync music/playlists
+
 # Check if hard drive connected
 if [ -d "/run/media/simon/info" ]; then
     echo Hard drive connected. Generating local backup...
