@@ -25,7 +25,7 @@ macro index o "<shell-escape>mailsync -V school<enter>" "run mbsync to sync scho
 unmailboxes *
 
 set spoolfile = "+INBOX"
-set record = "+[Gmail].Sent\ Mail"
+set record = /dev/null
 set postponed = "+[Gmail].Drafts"
 set trash = "+[Gmail].Trash"
 mailboxes "=INBOX" "=Conversations" "=Confirmation" "=[Gmail].Drafts" "=[Gmail].Sent\ Mail" "=[Gmail].Spam" "=[Gmail].Trash" 
