@@ -24,7 +24,7 @@ set statusline="  Hint: %z%= %A %10u:%-7g %15s %20d  "
 filextype *.pdf zathura %c %i &, apvlv %c, xpdf %c
 " preview
 fileviewer *.pdf
-        \ vifmigm pdfpreview %px %py %pw %ph %c
+        \ vifmimg pdfpreview %px %py %pw %ph %c
         \ %pc 
         \ vifmimg clear
         " \ pdftotext -nopgbrk %c -
@@ -50,14 +50,40 @@ fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.xpm
         \ %pc
         \ vifmimg clear
 
+" video thumbnail
+fileviewer *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
+        \*.fl[icv],*.m2v,*.mov,*.webm,*.ts,*.mts,*.m4v,*.r[am],*.qt,*.divx,
+        \ vifmimg videopreview %px %py %pw %ph %c
+        \ %pc
+        \ vifmimg clear
+
+" Video 
+" filextype *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
+         " \*.fl[icv],*.m2v,*.mov,*.webm,*.ts,*.mts,*.m4v,*.r[am],*.qt,*.divx,
+         " \*.as[fx]
+         " \ {View using ffplay}
+         " \ ffplay -fs -autoexit %f,
+         " \ {View using Dragon}
+         " \ dragon %f:p,
+         " \ {View using mplayer}
+         " \ mplayer %f,
+" fileviewer *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
+         " \*.fl[icv],*.m2v,*.mov,*.webm,*.ts,*.mts,*.m4v,*.r[am],*.qt,*.divx,
+         " \*.as[fx]
+         " \ vifmimg videopreview %px %py %pw %ph %c
+         " \ %pc
+         " \ vifmimg clear
+         " " \ ffprobe -pretty %c 2>&1
+
 set vifminfo=dhistory,savedirs,chistory,state,tui,shistory,
         \phistory,fhistory,dirstack,registers,bookmarks,bmarks
 
 " sxiv thumbnail mode
 nnoremap sx :!sxiv -t %d & <cr>
 
-" shell in cd
-nnoremap s :shell<cr>
+" proper quit
+unmap q
+nnoremap q :shell<cr>
 
 " visibility
 nnoremap w :view<cr> 
@@ -73,11 +99,10 @@ nnoremap yf :!echo %c:p | xclip %i<cr>
 nnoremap J 5j
 nnoremap K 5k
 
+" filename editing
 nnoremap I cw<c-a>
 nnoremap cc cw<c-u>
 nnoremap A cw
 
-
-
-
-
+map > :!vifmimg inc<CR>
+map < :!vifmimg dec<CR>

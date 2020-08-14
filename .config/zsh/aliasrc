@@ -31,7 +31,7 @@ alias cp="cp -v" #verbose cp
 alias mv="mv -v" #same idea
 alias rm="rm -vI" #I've lost many things before
 alias z="zathura" #thank the heavens
-alias n="~/.config/vifm/vifmrun ." #why is it n??
+alias n="~/.config/vifm/scripts/vifmrun ." #why is it n??
 alias q="exit" #zoomer time
 
 #going to places faster

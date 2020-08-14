@@ -6,7 +6,7 @@
 
 # TUI:
 al
-q0
+q1
 v2
 ov
 m-1
@@ -14,20 +14,20 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/simon/.config/vifm
-	colors
-1
-d/home/simon/.config/vifm/colors
+d/home/simon/Downloads
+	compton-tryone-git
+3
+d/
+	home
+4
+d/home/simon/.config/vifm/scripts
+	vifmimg
+2
+d/home/simon
 	..
 0
-d/home/simon/.config/vifm
-	scripts
-2
-d/home/simon/.config/vifm/scripts
-	README
-1
-d/home/simon/.config/vifm
-	scripts
+d/home
+	simon
 2
 d/home/simon
 	Desktop
@@ -36,14 +36,110 @@ d/home/simon/Desktop
 	photos
 3
 d/home/simon
-	..
-0
-d/home
-	simon
+	Desktop
+1
+d/home/simon/Desktop
+	academic
+1
+d/home/simon/Desktop/academic
+	textbooks
+3
+d/home/simon/Desktop/academic/textbooks
+	brand_abstract_algebra-passwd-newton.pdf
+5
+d/home/simon/Desktop/academic
+	tams
 2
+d/home/simon/Desktop
+	academic
+1
 d/home/simon
-	..
-0
+	.config
+4
+d/home/simon/.config
+	vifm
+12
+d/home/simon/.config/vifm
+	vifmimgpdfpage
+5
+d/home/simon
+	Desktop
+1
+d/home/simon/Desktop
+	academic
+1
+d/home/simon/Desktop/academic
+	tams
+2
+d/home/simon/Desktop/academic/tams
+	math
+2
+d/home/simon/Desktop/academic
+	textbooks
+3
+d/home/simon/Desktop/academic/textbooks
+	book_of_proof.pdf
+4
+d/home/simon
+	Desktop
+1
+d/home/simon/Desktop
+	academic
+1
+d/home/simon/Desktop/academic
+	textbooks
+3
+d/home/simon/Desktop/academic/textbooks
+	brand_abstract_algebra-passwd-newton.pdf
+5
+d/home/simon/.config/vifm
+	colors
+1
+d/home/simon/.config
+	vifm
+26
+d/home/simon
+	Desktop
+1
+d/home/simon/Desktop
+	photos
+3
+d/home/simon
+	.config
+5
+d/home/simon/.config
+	vifm
+26
+d/home/simon/.config/vifm
+	scripts
+2
+d/home/simon/.config/vifm/scripts
+	vifmrun
+3
+d/home/simon/.config/vifm
+	vifmrc
+7
+d/home/simon
+	Desktop
+1
+d/home/simon/Desktop
+	photos
+3
+d/home/simon
+	Desktop
+1
+d/home/simon/Desktop
+	photos
+3
+d/home/simon/Desktop/photos
+	2015-08-05
+6
+d/home/simon/Desktop
+	photos
+3
+d/home/simon
+	Desktop
+1
 d/home
 	simon
 2
@@ -54,43 +150,117 @@ d/home
 	simon
 2
 d/home/simon
+	.config
+5
+d/home/simon/.config
+	vifm
+26
+d/home/simon/.config/vifm
+	vifmrc
+7
+d/home/simon
 	Desktop
 1
+d/home/simon/Desktop
+	photos
+3
+d/home/simon/Desktop/photos
+	2013-06-14
+1
+d/home/simon/Desktop/photos/2013-06-14
+	IMG_0572.JPG
+2
+d/home/simon/Desktop/photos
+	2013-10-24
+2
+d/home/simon/Desktop/photos/2013-10-24
+	Oct 24, 2013 9_07_56 PM-edited.jpg
+1
+d/home/simon/Desktop/photos
+	2013-10-26
+3
+d/home/simon/Desktop/photos/2013-10-26
+	Oct 26, 2013 12_55_00 PM-edited.jpg
+1
+d/home/simon/Desktop/photos
+	2013-11-14
+4
+d/home/simon/Desktop/photos/2013-11-14
+	2013-11-14.png
+1
+d/home/simon/Desktop/photos
+	2013-11-14
+4
+d/home/simon/Desktop/photos/2013-11-14
+	2013-11-14.png
+1
+d/home/simon/Desktop/photos
+	2013-12-09
+5
+d/home/simon/Desktop/photos/2013-12-09
+	IMG_0592.JPG
+5
+d/home/simon/Desktop/photos
+	2013-12-09
+5
+d/home/simon/Desktop/photos/2013-12-09
+	IMG_0592.JPG
+5
+d/home/simon/Desktop/photos
+	2013-12-21
+6
+d/home/simon/Desktop/photos/2013-12-21
+	IMG_0601-edited.jpg
+1
+d/home/simon/Desktop/photos
+	2013-12-23
+7
+d/home/simon/Desktop/photos/2013-12-23
+	Dec 23, 2013 2_07_03 PM.jpg
+2
+d/home/simon/Desktop/photos
+	2013-12-21
+7
+d/home/simon
+	Downloads
+2
 d
 
 # Right window history (oldest to newest):
-D/home/simon/.config/vifm
-	..
-0
-D/home/simon/.config
-	vifm
-26
-D/home/simon
-	..
-0
-D/home
-	simon
-2
 D/home/simon
 	..
 0
 D
 
 # Command line history (oldest to newest):
-:wq
+:newton
 :q
+:wq
 
 # Search history (oldest to newest):
 
 # Prompt history (oldest to newest):
+pvifmrch
+pvifmrc
+pvifminfo
+pvifmimgpdfpage
 
 # Local filter history (oldest to newest):
 
 # Registers:
+""/home/simon/.local/share/vifm/Trash/000_help.png
 
 # Directory stack (oldest to newest):
 
 # Trash content:
+t/home/simon/.local/share/vifm/Trash/000_whyhelp.sh
+	/home/simon/whyhelp.sh
+t/home/simon/.local/share/vifm/Trash/000_man.png
+	/home/simon/man.png
+t/home/simon/.local/share/vifm/Trash/000_help.png
+	/home/simon/help.png
+t/home/simon/.local/share/vifm/Trash/000_vifmrc(1)
+	/home/simon/.config/vifm/vifmrc(1)
 
 # State:
 f
