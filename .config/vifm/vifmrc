@@ -1,0 +1,83 @@
+set vicmd=nvim
+set trash
+set history=100
+set fastrun
+set sortnumbers
+set undolevels=100
+set novimhelp
+set norunexec
+set timefmt=%m/%d\ %H:%M
+set wildmenu
+set wildstyle=popup
+set suggestoptions=normal,visual,view,otherpane,keys,marks,registers
+set ignorecase
+set smartcase
+set nohlsearch
+set incsearch
+set scrolloff=4
+if !has('win')
+    set slowfs=curlftpfs
+endif
+set statusline="  Hint: %z%= %A %10u:%-7g %15s %20d  "
+
+" pdfs
+filextype *.pdf zathura %c %i &, apvlv %c, xpdf %c
+" preview
+fileviewer *.pdf
+        \ vifmigm pdfpreview %px %py %pw %ph %c
+        \ %pc 
+        \ vifmimg clear
+        " \ pdftotext -nopgbrk %c -
+
+" djvu
+filextype *.djvu
+        \ {View in zathura}
+        \ zathura %f,
+        \ {View in apvlv}
+        \ apvlv %f,
+
+" html
+filextype *.html *.htm
+        \ firefox %f &,
+
+" images
+filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
+        \ {View in sxiv}
+        \ sxiv -ia %f &,
+" preview
+fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.xpm         
+        \ vifmimg draw %px %py %pw %ph %c
+        \ %pc
+        \ vifmimg clear
+
+set vifminfo=dhistory,savedirs,chistory,state,tui,shistory,
+        \phistory,fhistory,dirstack,registers,bookmarks,bmarks
+
+" sxiv thumbnail mode
+nnoremap sx :!sxiv -t %d & <cr>
+
+" shell in cd
+nnoremap s :shell<cr>
+
+" visibility
+nnoremap w :view<cr> 
+vnoremap w :view<cr>gv
+
+" yank directory path
+nnoremap yd :!echo %d | xclip %i<cr>
+
+" yank file path
+nnoremap yf :!echo %c:p | xclip %i<cr>
+
+" zoom
+nnoremap J 5j
+nnoremap K 5k
+
+nnoremap I cw<c-a>
+nnoremap cc cw<c-u>
+nnoremap A cw
+
+
+
+
+
