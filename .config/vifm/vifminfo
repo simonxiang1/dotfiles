@@ -14,57 +14,24 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/simon/Downloads
-	compton-tryone-git
-3
-d/
-	home
-4
-d/home/simon/.config/vifm/scripts
-	vifmimg
+d/home/simon/temp/Desktop
+	personal
 2
-d/home/simon
+d/home/simon/temp/Desktop/personal
+	website
+9
+d/home/simon/temp/Desktop/personal/website
 	..
 0
-d/home
-	simon
-2
 d/home/simon
 	Desktop
 1
 d/home/simon/Desktop
-	photos
-3
-d/home/simon
-	Desktop
-1
-d/home/simon/Desktop
-	academic
-1
-d/home/simon/Desktop/academic
-	textbooks
-3
-d/home/simon/Desktop/academic/textbooks
-	brand_abstract_algebra-passwd-newton.pdf
-5
-d/home/simon/Desktop/academic
-	tams
+	personal
 2
-d/home/simon/Desktop
-	academic
-1
-d/home/simon
-	.config
+d/home/simon/Desktop/personal
+	memories
 4
-d/home/simon/.config
-	vifm
-12
-d/home/simon/.config/vifm
-	vifmimgpdfpage
-5
-d/home/simon
-	Desktop
-1
 d/home/simon/Desktop
 	academic
 1
@@ -72,14 +39,35 @@ d/home/simon/Desktop/academic
 	tams
 2
 d/home/simon/Desktop/academic/tams
+	junior_year
+1
+d/home/simon/Desktop/academic
+	tams
+2
+d/home/simon/Desktop/academic/tams
+	junior_year
+1
+d/home/simon/Desktop/academic/tams/junior_year
+	..
+0
+d/home/simon/Desktop/academic/tams
 	math
 2
-d/home/simon/Desktop/academic
-	textbooks
-3
-d/home/simon/Desktop/academic/textbooks
-	book_of_proof.pdf
-4
+d/home/simon/Desktop/academic/tams/math
+	lin_alg
+5
+d/home/simon/Desktop/academic/tams/math/lin_alg
+	..
+0
+d/home/simon/Desktop/academic/tams/math
+	misc_documents
+6
+d/home/simon/Desktop/academic/tams/math/misc_documents
+	old-latex-files
+2
+d/home/simon/Desktop/academic/tams/math/misc_documents/old-latex-files
+	physics_lab_reports
+6
 d/home/simon
 	Desktop
 1
@@ -87,56 +75,80 @@ d/home/simon/Desktop
 	academic
 1
 d/home/simon/Desktop/academic
-	textbooks
-3
-d/home/simon/Desktop/academic/textbooks
-	brand_abstract_algebra-passwd-newton.pdf
-5
-d/home/simon/.config/vifm
-	colors
-1
-d/home/simon/.config
-	vifm
-26
-d/home/simon
-	Desktop
-1
-d/home/simon/Desktop
-	photos
-3
-d/home/simon
-	.config
-5
-d/home/simon/.config
-	vifm
-26
-d/home/simon/.config/vifm
-	scripts
+	tams
 2
-d/home/simon/.config/vifm/scripts
-	vifmrun
+d/home/simon/Desktop
+	personal
+2
+d/home/simon/Desktop/personal
+	information
 3
-d/home/simon/.config/vifm
-	vifmrc
-7
+d/home/simon/Desktop
+	academic
+1
+d/home/simon/Desktop/academic
+	japanese_stuff
+1
+d/home/simon/Desktop/academic/japanese_stuff
+	images
+1
+d/home/simon/Desktop/academic
+	tams
+2
+d/home/simon/Desktop
+	academic
+1
+d/home/simon
+	Desktop
+1
+d/home
+	simon
+2
+d/home/simon/temp
+	..
+0
+d/home/simon
+	temp
+4
+d/home/simon/temp
+	Music
+9
+d/home/simon/temp/Music
+	Music
+1
 d/home/simon
 	Desktop
 1
 d/home/simon/Desktop
-	photos
-3
-d/home/simon
-	Desktop
+	personal
+2
+d/home/simon/Desktop/personal
+	anime
 1
-d/home/simon/Desktop
-	photos
-3
-d/home/simon/Desktop/photos
-	2015-08-05
+d/home/simon/Desktop/personal/anime
+	wallpaper_selections
 6
-d/home/simon/Desktop
-	photos
+d/home/simon/Desktop/personal/anime/wallpaper_selections
+	senjougahara_starry_night_mal.jpg
+25
+d/home/simon/Desktop/academic/japanese_stuff
+	japanese_attack_plan.pdf
 3
+d/home/simon
+	Desktop
+1
+d/home/simon/Desktop
+	academic
+1
+d/home/simon/Desktop/academic
+	japanese_stuff
+1
+d/home/simon/Desktop/academic/japanese_stuff
+	images
+1
+d/home/simon/Desktop/academic/japanese_stuff/images
+	IMG_20190831_072045.jpg
+1
 d/home/simon
 	Desktop
 1
@@ -144,86 +156,164 @@ d/home
 	simon
 2
 d/
-	home
-4
-d/home
-	simon
-2
-d/home/simon
-	.config
-5
-d/home/simon/.config
-	vifm
-26
-d/home/simon/.config/vifm
-	vifmrc
-7
+	srv
+14
 d/home/simon
 	Desktop
 1
 d/home/simon/Desktop
-	photos
-3
-d/home/simon/Desktop/photos
-	2013-06-14
+	academic
 1
-d/home/simon/Desktop/photos/2013-06-14
-	IMG_0572.JPG
-2
-d/home/simon/Desktop/photos
-	2013-10-24
-2
-d/home/simon/Desktop/photos/2013-10-24
-	Oct 24, 2013 9_07_56 PM-edited.jpg
-1
-d/home/simon/Desktop/photos
-	2013-10-26
-3
-d/home/simon/Desktop/photos/2013-10-26
-	Oct 26, 2013 12_55_00 PM-edited.jpg
-1
-d/home/simon/Desktop/photos
-	2013-11-14
+d/home/simon/Desktop/academic
+	ut_austin
 4
-d/home/simon/Desktop/photos/2013-11-14
-	2013-11-14.png
-1
-d/home/simon/Desktop/photos
-	2013-11-14
-4
-d/home/simon/Desktop/photos/2013-11-14
-	2013-11-14.png
-1
-d/home/simon/Desktop/photos
-	2013-12-09
-5
-d/home/simon/Desktop/photos/2013-12-09
-	IMG_0592.JPG
-5
-d/home/simon/Desktop/photos
-	2013-12-09
-5
-d/home/simon/Desktop/photos/2013-12-09
-	IMG_0592.JPG
-5
-d/home/simon/Desktop/photos
-	2013-12-21
-6
-d/home/simon/Desktop/photos/2013-12-21
-	IMG_0601-edited.jpg
-1
-d/home/simon/Desktop/photos
-	2013-12-23
-7
-d/home/simon/Desktop/photos/2013-12-23
-	Dec 23, 2013 2_07_03 PM.jpg
+d/home/simon/Desktop/academic/ut_austin
+	freshman_year
 2
-d/home/simon/Desktop/photos
-	2013-12-21
-7
+d/home/simon/Desktop/academic/ut_austin/freshman_year
+	algebraic_topology
+1
+d/home/simon/Desktop/academic/ut_austin/freshman_year/algebraic_topology
+	hw0
+1
+d/home/simon/Desktop/academic/ut_austin/freshman_year/algebraic_topology/hw0
+	hw0.aux
+1
 d/home/simon
-	Downloads
+	Desktop
+1
+d/home/simon/Desktop
+	personal
 2
+d/home/simon/Desktop/personal
+	information
+3
+d/home/simon/Desktop
+	academic
+1
+d/home/simon/Desktop/academic
+	ut_austin
+4
+d/home/simon/Desktop/academic/ut_austin
+	freshman_year
+2
+d/home/simon/Desktop/academic/ut_austin/freshman_year
+	algebraic_topology
+1
+d/home/simon/Desktop/academic/ut_austin/freshman_year/algebraic_topology
+	prehomework.pdf
+2
+d/home/simon
+	playlists
+4
+d/home/simon/playlists
+	chill_anime_songs.m3u
+3
+d/home/simon
+	Desktop
+1
+d/home/simon/Desktop
+	personal
+2
+d/home/simon/Desktop/personal
+	information
+3
+d/home/simon/Desktop
+	academic
+1
+d/home/simon/Desktop/academic
+	ut_austin
+4
+d/home/simon/Desktop/academic/ut_austin
+	freshman_year
+2
+d/home/simon/Desktop/academic/ut_austin/freshman_year
+	algebraic_topology
+1
+d/home/simon/Desktop/academic/ut_austin/freshman_year/algebraic_topology
+	master_homework.tex
+2
+d/home/simon/Desktop/academic/ut_austin/freshman_year
+	algebraic_topology
+1
+d/home/simon/Desktop/academic/ut_austin/freshman_year/algebraic_topology
+	master_homework.tex
+8
+d/home/simon/Desktop/academic/ut_austin/freshman_year
+	algebraic_topology
+1
+d/home/simon/Desktop/academic/ut_austin/freshman_year/algebraic_topology
+	master_homework.tex
+10
+d/home/simon
+	Desktop
+1
+d/home/simon/Desktop
+	academic
+1
+d/home/simon/Desktop/academic
+	ut_austin
+4
+d/home/simon/Desktop/academic/ut_austin
+	freshman_year
+2
+d/home/simon/Desktop/academic/ut_austin/freshman_year
+	algebraic_topology
+1
+d/home/simon/Desktop/academic/ut_austin/freshman_year/algebraic_topology
+	master_homework.tex
+10
+d/home/simon
+	Desktop
+1
+d/home/simon/Desktop
+	academic
+1
+d/home/simon/Desktop/academic
+	ut_austin
+4
+d/home/simon/Desktop/academic/ut_austin
+	freshman_year
+2
+d/home/simon/Desktop/academic/ut_austin/freshman_year
+	algebraic_topology
+1
+d/home/simon/Desktop/academic/ut_austin/freshman_year/algebraic_topology
+	master_homework.toc
+11
+d/home/simon/Desktop/academic/ut_austin/freshman_year
+	preamble.tex
+2
+d/home/simon
+	Desktop
+1
+d/home/simon/Desktop
+	academic
+1
+d/home/simon/Desktop/academic
+	ut_austin
+4
+d/home/simon/Desktop/academic/ut_austin
+	freshman_year
+2
+d/home/simon/Desktop/academic/ut_austin/freshman_year
+	algebraic_topology
+1
+d/home/simon/Desktop/academic/ut_austin/freshman_year/algebraic_topology
+	hw_0.tex
+2
+d/home/simon
+	Desktop
+1
+d/home/simon/Desktop
+	academic
+1
+d/home/simon/Desktop/academic
+	ut_austin
+4
+d/home/simon/Desktop/academic/tams/math/misc_documents/old-latex-files
+	physics_lab_reports
+6
 d
 
 # Right window history (oldest to newest):
@@ -248,7 +338,7 @@ pvifmimgpdfpage
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/simon/.local/share/vifm/Trash/000_help.png
+""/home/simon/.local/share/vifm/Trash/001_master_homework.toc
 
 # Directory stack (oldest to newest):
 
@@ -261,6 +351,32 @@ t/home/simon/.local/share/vifm/Trash/000_help.png
 	/home/simon/help.png
 t/home/simon/.local/share/vifm/Trash/000_vifmrc(1)
 	/home/simon/.config/vifm/vifmrc(1)
+t/home/simon/.local/share/vifm/Trash/000_hw_0.aux
+	/home/simon/Desktop/academic/ut_austin/freshman_year/algebraic_topology/hw_0.aux
+t/home/simon/.local/share/vifm/Trash/000_hw_0.fdb_latexmk
+	/home/simon/Desktop/academic/ut_austin/freshman_year/algebraic_topology/hw_0.fdb_latexmk
+t/home/simon/.local/share/vifm/Trash/000_hw_0.fls
+	/home/simon/Desktop/academic/ut_austin/freshman_year/algebraic_topology/hw_0.fls
+t/home/simon/.local/share/vifm/Trash/000_hw_0.log
+	/home/simon/Desktop/academic/ut_austin/freshman_year/algebraic_topology/hw_0.log
+t/home/simon/.local/share/vifm/Trash/000_hw_0.pdf
+	/home/simon/Desktop/academic/ut_austin/freshman_year/algebraic_topology/hw_0.pdf
+t/home/simon/.local/share/vifm/Trash/000_hw_0.synctex.gz
+	/home/simon/Desktop/academic/ut_austin/freshman_year/algebraic_topology/hw_0.synctex.gz
+t/home/simon/.local/share/vifm/Trash/000_master_homework.aux
+	/home/simon/Desktop/academic/ut_austin/freshman_year/algebraic_topology/master_homework.aux
+t/home/simon/.local/share/vifm/Trash/000_master_homework.fdb_latexmk
+	/home/simon/Desktop/academic/ut_austin/freshman_year/algebraic_topology/master_homework.fdb_latexmk
+t/home/simon/.local/share/vifm/Trash/000_master_homework.fls
+	/home/simon/Desktop/academic/ut_austin/freshman_year/algebraic_topology/master_homework.fls
+t/home/simon/.local/share/vifm/Trash/000_master_homework.log
+	/home/simon/Desktop/academic/ut_austin/freshman_year/algebraic_topology/master_homework.log
+t/home/simon/.local/share/vifm/Trash/000_master_homework.pdf
+	/home/simon/Desktop/academic/ut_austin/freshman_year/algebraic_topology/master_homework.pdf
+t/home/simon/.local/share/vifm/Trash/000_master_homework.synctex.gz
+	/home/simon/Desktop/academic/ut_austin/freshman_year/algebraic_topology/master_homework.synctex.gz
+t/home/simon/.local/share/vifm/Trash/000_master_homework.toc
+	/home/simon/Desktop/academic/ut_austin/freshman_year/algebraic_topology/master_homework.toc
 
 # State:
 f

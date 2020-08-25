@@ -2,7 +2,7 @@
 # Sets the background and colorscheme to nord
 
 wal --theme "base16-nord"
-nitrogen --set-scaled "/home/simon/Desktop/personal/anime/mobile_wallpapers/nord_ocean_jellyfish.png"
+nitrogen --set-scaled "/home/simon/Desktop/personal/anime/wallpaper_selections/nord_ocean_jellyfish.png"
 
 # updates firefox theme if running (if not, update it yourself you lazy bum)
 if [ -n "$(pidof firefox)" ]; then
