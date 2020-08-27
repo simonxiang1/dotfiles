@@ -14,90 +14,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/simon/temp/Desktop
-	personal
-2
-d/home/simon/temp/Desktop/personal
-	website
-9
-d/home/simon/temp/Desktop/personal/website
-	..
-0
-d/home/simon
-	Desktop
-1
-d/home/simon/Desktop
-	personal
-2
-d/home/simon/Desktop/personal
-	memories
-4
-d/home/simon/Desktop
-	academic
-1
-d/home/simon/Desktop/academic
-	tams
-2
-d/home/simon/Desktop/academic/tams
-	junior_year
-1
-d/home/simon/Desktop/academic
-	tams
-2
-d/home/simon/Desktop/academic/tams
-	junior_year
-1
-d/home/simon/Desktop/academic/tams/junior_year
-	..
-0
-d/home/simon/Desktop/academic/tams
-	math
-2
-d/home/simon/Desktop/academic/tams/math
-	lin_alg
-5
-d/home/simon/Desktop/academic/tams/math/lin_alg
-	..
-0
-d/home/simon/Desktop/academic/tams/math
-	misc_documents
-6
-d/home/simon/Desktop/academic/tams/math/misc_documents
-	old-latex-files
-2
-d/home/simon/Desktop/academic/tams/math/misc_documents/old-latex-files
-	physics_lab_reports
-6
-d/home/simon
-	Desktop
-1
-d/home/simon/Desktop
-	academic
-1
-d/home/simon/Desktop/academic
-	tams
-2
-d/home/simon/Desktop
-	personal
-2
-d/home/simon/Desktop/personal
-	information
-3
-d/home/simon/Desktop
-	academic
-1
-d/home/simon/Desktop/academic
-	japanese_stuff
-1
-d/home/simon/Desktop/academic/japanese_stuff
-	images
-1
-d/home/simon/Desktop/academic
-	tams
-2
-d/home/simon/Desktop
-	academic
-1
 d/home/simon
 	Desktop
 1
@@ -314,6 +230,90 @@ d/home/simon/Desktop/academic
 d/home/simon/Desktop/academic/tams/math/misc_documents/old-latex-files
 	physics_lab_reports
 6
+d/home/simon
+	Desktop
+1
+d/home/simon/Desktop
+	academic
+1
+d/home/simon/Desktop/academic
+	ut_austin
+4
+d/home/simon/Desktop
+	personal
+2
+d/home/simon/Desktop/personal
+	anime
+1
+d/home/simon/Desktop/personal/anime
+	wallpaper_selections
+6
+d/home/simon/Desktop/personal/anime/wallpaper_selections
+	anime_girl_studying_wallpaper_engine.jpg
+1
+d/home/simon/Desktop/academic/ut_austin
+	freshman_year
+2
+d/home/simon/Desktop/academic/ut_austin/freshman_year
+	algebraic_topology
+1
+d/home/simon/Desktop/academic/ut_austin
+	freshman_year
+2
+d/home/simon/Desktop/academic/ut_austin/freshman_year
+	complex_analysis
+2
+d/home/simon/Desktop/academic/ut_austin
+	freshman_year
+2
+d/home/simon/Desktop/academic/ut_austin/freshman_year
+	algebraic_topology
+1
+d/home/simon/Desktop/academic/ut_austin/freshman_year/algebraic_topology
+	general_info
+1
+d/home/simon/Desktop/academic/ut_austin/freshman_year/algebraic_topology/general_info
+	syllabus_files
+1
+d/home/simon/Desktop/academic/ut_austin/freshman_year/algebraic_topology/general_info/syllabus_files
+	..
+0
+d/home/simon/Desktop/academic/ut_austin/freshman_year/algebraic_topology/general_info
+	prehomework.pdf
+1
+d/home/simon/Desktop/academic/ut_austin/freshman_year/algebraic_topology
+	general_info
+1
+d/home/simon/Desktop/academic/ut_austin/freshman_year
+	complex_analysis
+2
+d/home/simon/Desktop/academic/ut_austin/freshman_year/complex_analysis
+	general_info
+1
+d/home/simon/Desktop/academic/ut_austin/freshman_year/complex_analysis/general_info
+	..
+0
+d/home/simon/Desktop/academic/ut_austin/freshman_year/complex_analysis
+	testing
+2
+d/home/simon/Desktop/academic/ut_austin/freshman_year
+	differential_equations
+3
+d/home/simon/Desktop/academic/ut_austin/freshman_year/differential_equations
+	general_info
+1
+d/home/simon/Desktop/academic/ut_austin/freshman_year/differential_equations/general_info
+	..
+0
+d/home/simon/Desktop/academic/ut_austin/freshman_year/differential_equations
+	general_info
+1
+d/home/simon/Desktop/academic/ut_austin/freshman_year
+	algebraic_topology
+1
+d/home/simon/.local/share/mail/main/test1/cur
+	1594050131.R1701358160608001816.archlinux:2,S
+39
 d
 
 # Right window history (oldest to newest):

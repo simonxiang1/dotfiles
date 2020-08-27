@@ -74,16 +74,10 @@ else:
 endsnippet
 
 snippet eq "equation" w
-
 \[
 $1
 \]
 $0
-endsnippet
-
-priority 100
-snippet ... "ldots" iA
-\ldots
 endsnippet
 
 snippet enum "enumerate" bA
@@ -174,12 +168,60 @@ snippet comp "complement" iA
 ^{c}
 endsnippet
 
+# tot -> to the {something}
+
 context "math()"
-snippet td "superscript" iA
+snippet tot "superscript" iA
 ^{$1}$0
+endsnippet
+
+context "math()"
+snippet sbs "subscript" iA
+_{$1}$0
 endsnippet
 
 context "math()"
 snippet // "fraction" iA
 \\frac{$1}{$2}$0
 endsnippet
+
+context "math()"
+snippet ddt "d()/dt" iA
+\\frac{d$1}{dt}$0
+endsnippet
+
+context "math()"
+snippet ddx "d()/dx" iA
+\\frac{d$1}{dx}$0
+endsnippet
+
+context "math()"
+snippet dint "definite integral" wA
+\int_{${1:\infty}}^{${2:\infty}} ${3:${VISUAL}} \, d$0
+endsnippet
+
+context "math()"
+snippet indl "indefinite integral" wA
+\int ${1:${VISUAL}} \, d$0
+endsnippet
+
+context "math()"
+snippet Re "real part" wA
+\operatorname{Re}$0
+endsnippet
+
+context "math()"
+snippet Im "complex part" wA
+\operatorname{Im}$0
+endsnippet
+
+context "math()"
+snippet map "map" A
+$1 \colon $2 \to $0
+endsnippet
+
+snippet sum "sum" w
+\sum_{n=${1:1}}^{${2:\infty}} ${3:a_n x^n}
+endsnippet
+
+

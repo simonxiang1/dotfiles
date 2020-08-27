@@ -21,7 +21,7 @@ bind index,pager g noop
 bind index,pager M noop
 bind index,pager C noop
 bind index gg first-entry
-macro index o "<shell-escape>mailsync -V school<enter>" "run mbsync to sync school"
+macro index o "<shell-escape>mbsync -a<enter>" "run mbsync to sync school"
 unmailboxes *
 
 set spoolfile = "+INBOX"
