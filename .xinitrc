@@ -10,6 +10,9 @@ fcitx & sleep 2
 # works!!!!
 wal -i "/home/simon/Desktop/personal/anime/wallpaper_selections"
 
+# autostart mpd?
+mpd &
+
 # start dwm
 exec dwm
 
