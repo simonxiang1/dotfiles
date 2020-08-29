@@ -114,7 +114,7 @@ snippet item "itemize" bA
 endsnippet
 
 snippet defn "definition" 
-\emph{${1:${VISUAL}}}$0
+\emph{${1:${VISUAL}}} $0
 endsnippet
 
 snippet def "definition environment" b
@@ -232,13 +232,8 @@ snippet '((\d+)|(\d*)(\\)?([A-Za-z]+)((\^|_)(\{\d+\}|\d))*)/' "Fraction" wrA
 endsnippet
 
 context "math()"
-snippet ddt "d()/dt" iA
-\\frac{d$1}{dt}$0
-endsnippet
-
-context "math()"
-snippet ddx "d()/dx" iA
-\\frac{d$1}{dx}$0
+snippet ddt "d/dt" iA
+\frac{d}{dt} 
 endsnippet
 
 context "math()"
@@ -353,4 +348,8 @@ endsnippet
 context "math()"
 snippet \\\ "setminus" iA
 \setminus
+endsnippet
+
+snippet difeq "differential equation" iA
+differential equation 
 endsnippet

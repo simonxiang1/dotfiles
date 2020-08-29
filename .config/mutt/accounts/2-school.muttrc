@@ -16,6 +16,9 @@ set crypt_opportunistic_encrypt = yes
 set pgp_self_encrypt = yes
 set pgp_default_key  = 
 
+set sort=reverse-threads
+set sort_aux=last-date-received
+
 bind index,pager gg noop
 bind index,pager g noop
 bind index,pager M noop
