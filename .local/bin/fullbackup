@@ -3,14 +3,15 @@
 
 # Updating installed packages
 pacman -Qq > /home/simon/Desktop/personal/useful_information/programs_installed.txt
-echo Manually installed programs: $(pacman -Qqe | wc - l) >> /home/simon/Desktop/personal/useful_information/programs_installed.txt
+echo Manually installed programs: $(pacman -Qqe | wc -l) >> /home/simon/Desktop/personal/useful_information/programs_installed.txt
 
 # Check if phone connected, then sync music/playlists
+# Possibly back up home directory to phone (if I can fix the dam permission issues)
 
 # Check if hard drive connected
 if [ -d "/run/media/simon/info" ]; then
     echo Hard drive connected. Generating local backup...
-    rsync -havzP ~/ /run/media/simon/info
+    rsync -havP ~/ /run/media/simon/info
 fi
 
 # Remote backup
