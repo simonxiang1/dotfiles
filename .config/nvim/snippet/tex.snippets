@@ -321,6 +321,11 @@ snippet QQ "Q" iA
 endsnippet
 
 context "math()"
+snippet CC "C" iA
+\C
+endsnippet
+
+context "math()"
 snippet ZZ "Z" iA
 \Z
 endsnippet
@@ -377,4 +382,34 @@ snippet prob "unnumbered problem env" bA
 $0
 endsnippet
 
-#iso, sin, cos, theta, phi, subscript but better, alpha, beta, del, mapsto, varphi, prod, hookrightarrow, trianglelefteq, operatorname, bar(postfix), \item[(a)]
+context "math()"
+snippet '(?<!\\)(sin|cos|arccot|cot|csc|ln|log|exp|star|perp)' "ln" rwA
+\\`!p snip.rv = match.group(1)`
+endsnippet
+
+context "math()"
+snippet '(?<!\\)(arcsin|arccos|arctan|arccot|arccsc|arcsec|pi|zeta|int|theta)' "ln" rwA
+\\`!p snip.rv = match.group(1)`
+endsnippet
+
+context "math()"
+snippet tto "to" iA
+\to 
+endsnippet
+
+context "math()"
+snippet mtto "mapsto" iA
+\mapsto 
+endsnippet
+
+context "math()"
+snippet sbgp "normal" iA
+\trianglelefteq
+endsnippet
+
+context "math()"
+snippet opn "operator name" iA
+\operatorname{$1}$0
+endsnippet
+
+#iso, subscript but better, alpha, beta, del, varphi, prod, hookrightarrow, operatorname, bar(postfix), \item[(a)]
