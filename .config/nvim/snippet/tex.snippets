@@ -94,10 +94,10 @@ snippet '([A-Za-z])_(\d\d)' "auto subscript2" wrA
 `!p snip.rv = match.group(1)`_{`!p snip.rv = match.group(2)`}
 endsnippet
 
-snippet eq "equation" wA
+snippet eq "equation" w
 \[
 ${1:${VISUAL}}
-.\] $0
+\] $0
 endsnippet
 
 snippet ali "Align" bA
@@ -500,7 +500,7 @@ y_{j}
 endsnippet
 
 context "math()"
-snippet atin "group action/inclusion map" iA
+snippet incl "inclusion" iA
 \hookrightarrow 
 endsnippet
 
