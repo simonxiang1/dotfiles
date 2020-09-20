@@ -346,6 +346,11 @@ snippet CC "C" iA
 endsnippet
 
 context "math()"
+snippet FF "F" iA
+\F
+endsnippet
+
+context "math()"
 snippet ZZ "Z" iA
 \Z
 endsnippet
@@ -414,7 +419,7 @@ snippet '(?<!\\)(sin|cos|arccot|cot|csc|ln|log|exp|star|phi|perp)' "ln" rwA
 endsnippet
 
 context "math()"
-snippet '(?<!\\)(arcsin|arccos|arctan|arccot|arccsc|arcsec|pi|zeta|int|theta|leq)' "ln" rwA
+snippet '(?<!\\)(arcsin|arccos|arctan|arccot|arccsc|arcsec|pi|zeta|theta|leq)' "ln" rwA
 \\`!p snip.rv = match.group(1)`
 endsnippet
 
@@ -524,4 +529,28 @@ snippet iso "isomorphism" iA
 \simeq 
 endsnippet
 
-#alpha, beta, \item[(a)], circ, \varepsilon, delta
+context "math()"
+snippet apha "alpha" iA
+\alpha 
+endsnippet
+
+context "math()"
+snippet bta "beta" iA
+\beta 
+endsnippet
+
+context "math()"
+snippet cal "mathcal" i
+\mathcal{$1} $0
+endsnippet
+
+context "math()"
+snippet cat "category" i
+\mathsf{$1} $0
+endsnippet
+
+snippet ftn "footnote" i
+\footnote{$1}$0
+endsnippet
+
+#\item[(a)], circ, \varepsilon, delta
