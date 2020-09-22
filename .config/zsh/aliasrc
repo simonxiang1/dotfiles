@@ -51,6 +51,8 @@ alias bk="vim ~/Desktop/personal/useful_information/useful_links.txt"
 alias blog="vim ~/Desktop/personal/useful_information/blog_posts.txt"
 alias zoom="vim ~/Desktop/personal/useful_information/zoom.txt"
 
+alias neomutt='echo "Hey, stop checking your email so much! There'\''s nothing new to see."'
+
 #FUNCTIONS
 #moving around
 cs() { cd "$1" && ls; } #cd then ls
