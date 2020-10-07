@@ -116,6 +116,13 @@ snippet enum "enumerate" bA
 \end{enumerate}
 endsnippet
 
+snippet prop "proposition" bA
+\begin{prop}
+    $1
+\end{prop}
+$0
+endsnippet
+
 snippet item "itemize" bA
 \begin{itemize}
     \item $0
@@ -526,7 +533,7 @@ endsnippet
 
 context "math()"
 snippet iso "isomorphism" iA
-\simeq 
+\cong
 endsnippet
 
 context "math()"
@@ -549,8 +556,13 @@ snippet cat "category" i
 \mathsf{$1} $0
 endsnippet
 
+context "math()"
+snippet cov "covering space" i 
+\widetilde 
+endsnippet
+
 snippet ftn "footnote" i
 \footnote{$1}$0
 endsnippet
 
-#\item[(a)], circ, \varepsilon, delta, overset, gamma
+#\item[(a)], circ, \varepsilon, delta, overset, gamma, insert figure(tikz), insert figure(incfig), \,\text{tskjflskjf}\,
