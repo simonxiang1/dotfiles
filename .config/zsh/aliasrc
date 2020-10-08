@@ -18,7 +18,7 @@ alias gad="git add"
 alias gadall="git add -A" #git add all
 alias gadupd="git add -u" #git add updated files
 #gacmp and gucmp make these aliases irrelevant, see below
-alias glog="git log --oneline" #will change to something better soon
+alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative" #pretty git log
 alias smic="sudo make install clean" #very useful for compiling suckless utilities
 #final form is gacmp - git add commit push and gucmp/cucmp (gacmp with update, config gucmp for dotfiles), see /local/bin
 
