@@ -284,7 +284,7 @@ endsnippet
 
 context "math()"
 snippet sum "sum" w
-\sum_{n=${1:1}}^{${2:\infty}} ${3:a_n x^n}
+\sum_{${1:i=1}}^{${2:n}} ${3:a_i x^i}
 endsnippet
 
 context "math()"
@@ -303,7 +303,7 @@ snippet cc "subset" Ai
 endsnippet
 
 context "math()"
-snippet inn "in " iA
+snippet inn "in" iA
 \in 
 endsnippet
 
@@ -479,36 +479,24 @@ snippet norm "norm" iA
 \|$1\|$0
 endsnippet
 
-
 context "math()"
-snippet xnn "xn" iA
-x_{n}
+snippet sui "sub i" iA
+_i 
 endsnippet
 
 context "math()"
-snippet ynn "yn" iA
-y_{n}
-endsnippet
-
-
-context "math()"
-snippet xii "xi" iA
-x_{i}
+snippet suj "sub j" iA
+_j 
 endsnippet
 
 context "math()"
-snippet yii "yi" iA
-y_{i}
+snippet sun "sub n" iA
+_n 
 endsnippet
 
 context "math()"
-snippet xjj "xj" iA
-x_{j}
-endsnippet
-
-context "math()"
-snippet yjj "yj" iA
-y_{j}
+snippet ton "to the n" iA
+^n 
 endsnippet
 
 context "math()"
@@ -522,8 +510,13 @@ snippet bdd "boundary/partial" iA
 endsnippet
 
 context "math()"
-snippet vphe "varphi" iA
+snippet vph "varphi" iA
 \varphi 
+endsnippet
+
+context "math()"
+snippet vep "varepsilon" iA
+\varepsilon 
 endsnippet
 
 context "math()"
@@ -533,17 +526,27 @@ endsnippet
 
 context "math()"
 snippet iso "isomorphism" iA
-\cong
+\simeq
 endsnippet
 
 context "math()"
-snippet apha "alpha" iA
+snippet AA "alpha" iA
 \alpha 
 endsnippet
 
 context "math()"
-snippet bta "beta" iA
+snippet BB "beta" iA
 \beta 
+endsnippet
+
+context "math()"
+snippet DD "Delta" iA
+\Delta 
+endsnippet
+
+context "math()"
+snippet GG "Gamma" iA
+\Gamma 
 endsnippet
 
 context "math()"
@@ -565,4 +568,4 @@ snippet ftn "footnote" i
 \footnote{$1}$0
 endsnippet
 
-#\item[(a)], circ, \varepsilon, delta, overset, gamma, insert figure(tikz), insert figure(incfig), \,\text{tskjflskjf}\,
+#\item[(a)], circ, delta, overset, gamma, insert figure(tikz), insert figure(incfig), \,\text{tskjflskjf}\, im, ker
