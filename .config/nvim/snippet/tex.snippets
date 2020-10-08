@@ -103,7 +103,7 @@ endsnippet
 snippet ali "Align" bA
 \begin{align*}
 	${1:${VISUAL}}
-.\end{align*}
+\end{align*}
 endsnippet
 
 snippet / "Fraction" i
@@ -130,7 +130,7 @@ snippet item "itemize" bA
 endsnippet
 
 snippet defn "definition" 
-\emph{${1:${VISUAL}}} $0
+\textbf{${1:${VISUAL}}} $0
 endsnippet
 
 snippet def "definition environment" bA
@@ -164,10 +164,6 @@ endsnippet
 
 context "math()"
 snippet () "left( right)" iA
-\left( ${1:${VISUAL}} \right) $0
-endsnippet
-
-snippet lr "left( right)" i
 \left( ${1:${VISUAL}} \right) $0
 endsnippet
 
@@ -243,11 +239,6 @@ snippet '((\d+)|(\d*)(\\)?([A-Za-z]+)((\^|_)(\{\d+\}|\d))*)/' "Fraction" wrA
 endsnippet
 
 context "math()"
-snippet ddt "d/dt" iA
-\frac{d}{dt} 
-endsnippet
-
-context "math()"
 snippet dint "definite integral" wA
 \int_{${1:\infty}}^{${2:\infty}} ${3:${VISUAL}} \, d$0
 endsnippet
@@ -268,16 +259,6 @@ snippet Im "complex part" wA
 endsnippet
 
 context "math()"
-snippet GL "general linear group" wA
-\operatorname{GL}_
-endsnippet
-
-context "math()"
-snippet SL "special linear group" wA
-\operatorname{SL}_
-endsnippet
-
-context "math()"
 snippet map "map" A
 \colon $1 \to $0
 endsnippet
@@ -288,7 +269,7 @@ snippet sum "sum" w
 endsnippet
 
 context "math()"
-snippet lim "limit" w
+snippet lim "limit"
 \lim_{${1:n} \to ${2:\infty}} 
 endsnippet
 
@@ -380,6 +361,11 @@ endsnippet
 context "math()"
 snippet ** "cdot" iA
 \cdot 
+endsnippet
+
+context "math()"
+snippet >>> "... but with shift" iA
+\cdots 
 endsnippet
 
 context "math()"
@@ -562,6 +548,11 @@ endsnippet
 context "math()"
 snippet cov "covering space" i 
 \widetilde 
+endsnippet
+
+context "math()"
+snippet oo "circle" i
+\circ 
 endsnippet
 
 snippet ftn "footnote" i
