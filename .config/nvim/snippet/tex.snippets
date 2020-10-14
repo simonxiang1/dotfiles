@@ -259,13 +259,13 @@ snippet Im "complex part" wA
 endsnippet
 
 context "math()"
-snippet map "map" A
+snippet map "map" iA
 \colon $1 \to $0
 endsnippet
 
 context "math()"
 snippet sum "sum" w
-\sum_{${1:i=1}}^{${2:n}} ${3:a_i x^i}
+\sum_{${1:i=0}}^{${2:n}} ${3:a_i x^i}
 endsnippet
 
 context "math()"
@@ -486,6 +486,11 @@ snippet ton "to the n" iA
 endsnippet
 
 context "math()"
+snippet toi "to the i" iA
+^i 
+endsnippet
+
+context "math()"
 snippet incl "inclusion" iA
 \hookrightarrow 
 endsnippet
@@ -559,4 +564,4 @@ snippet ftn "footnote" i
 \footnote{$1}$0
 endsnippet
 
-#\item[(a)], circ, delta, overset, gamma, insert figure(tikz), insert figure(incfig), \,\text{tskjflskjf}\, im, ker
+#\item[(a)], circ, delta, overset, gamma, insert figure(tikz), insert figure(incfig), \,\text{tskjflskjf}\, im, ker, eval (\left. \right|)

@@ -27,8 +27,6 @@ def_key "m"
   show_media_library
 def_key "m"
   toggle_media_library_columns_mode
-def_key "t"
-  show_tag_editor
 def_key "v"
   show_visualizer
 def_key "G"
@@ -49,3 +47,4 @@ def_key "x"
   delete_playlist_items
 def_key "P"
   show_playlist_editor
+
