@@ -17,6 +17,8 @@ compinit
 (cat ~/.cache/wal/sequences &) # pywal support
 export PATH="/home/simon/.local/bin:$PATH" # zathura pywal
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket" #ssh-agent 
+GPG_TTY=$(tty) #hopefully
+export GPG_TTY #gpg-agent works
 
 source ~/Downloads/powerlevel10k/powerlevel10k.zsh-theme #powerlevel10k
 source ~/Downloads/zsh-autosuggestions/zsh-autosuggestions.zsh #zsh auto-suggestions
