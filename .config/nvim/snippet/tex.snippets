@@ -71,8 +71,7 @@ endsnippet
 snippet beg "begin{} / end{}" bA
 \\begin{$1}
     $2
-\\end{$1}
-$0
+\\end{$1}$0
 endsnippet
 
 snippet mm "inline math mode" wA
@@ -265,7 +264,7 @@ endsnippet
 
 context "math()"
 snippet sum "sum" w
-\sum_{${1:i=0}}^{${2:n}} ${3:a_i x^i}
+\sum_{${1:n=0}}^{${2:\infty}} ${3:a_n x^n}
 endsnippet
 
 context "math()"
@@ -386,12 +385,6 @@ priority 1000
 context "math()"
 snippet S1 "S1" iA
 S^{1} 
-endsnippet
-
-priority 1000
-context "math()"
-snippet S2 "S2" iA
-S^{2} 
 endsnippet
 
 snippet subsec "subsection" bA
