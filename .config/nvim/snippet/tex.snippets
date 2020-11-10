@@ -343,6 +343,11 @@ snippet ZZ "Z" iA
 endsnippet
 
 context "math()"
+snippet TT "torus" iA
+\mathbb{T}
+endsnippet
+
+context "math()"
 snippet set "set" wA
 \\{$1\\} $0
 endsnippet
@@ -557,4 +562,39 @@ snippet ftn "footnote" i
 \footnote{$1}$0
 endsnippet
 
-#\item[(a)], circ, delta, overset, gamma, insert figure(tikz), insert figure(incfig), \,\text{tskjflskjf}\, im, ker, eval (\left. \right|)
+snippet diagram "tikz" b
+\begin{figure}[H]
+\centering
+$1
+\end{figure}$0
+endsnippet
+
+snippet image "hw image" b
+\begin{figure}[H]
+\centering
+ \includegraphics[width=\linewidth]{$1}
+\end{figure}$0
+endsnippet
+
+snippet figure "general figure" b
+\begin{figure}[H]
+\centering
+\incfig[0.3]{$1}
+\caption{$2}
+\label{$1}
+\end{figure}$0
+endsnippet
+
+snippet eval "evaluating stuff" i
+\left. ${1:${VISUAL}} \right| $0
+endsnippet
+
+snippet ovst "overset" iA
+\overset{$1}{${2:${VISUAL}}} $0
+endsnippet
+
+snippet udst "overset" iA
+\underset{$1}{${2:${VISUAL}}} $0
+endsnippet
+
+#delta, overset, gamma, \,\text{tskjflskjf}\, im

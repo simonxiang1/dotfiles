@@ -20,6 +20,7 @@ alias neomutt='echo "Hey, stop checking your email so much! There'\''s nothing n
 alias gadupd="git add -u" #git add updated files
 #gacmp and gucmp make these aliases irrelevant, see below
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative" #pretty git log
+alias neomutt='echo "Hey, stop checking your email so much! There'\''s nothing new to see."'
 alias clog="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative" #equality for all
 alias smic="sudo make install clean" #very useful for compiling suckless utilities
 #final form is gacmp - git add commit push and gucmp/cucmp (gacmp with update, config gucmp for dotfiles), see /local/bin
@@ -37,9 +38,11 @@ alias lsl="ls -l" #list long
 alias cp="cp -v" #verbose cp
 alias mv="mv -v" #same idea
 alias rm="rm -vI" #I've lost many things before
+alias neomutt='echo "Hey, stop checking your email so much! There'\''s nothing new to see."'
 alias z="zathura" #thank the heavens
 alias n="~/.config/vifm/scripts/vifmrun ." #why is it n??
 alias q="exit" #zoomer time
+alias qq="exit" #mega zoomer time
 
 #going to places faster
 alias mus="cs ~/Desktop/personal/music" #cs is defined later
@@ -49,6 +52,7 @@ alias neomutt='echo "Hey, stop checking your email so much! There'\''s nothing n
 alias ut="cs ~/Desktop/academic/ut_austin"
 alias tb="cs ~/Desktop/academic/textbooks"
 alias help="vim ~/Desktop/personal/useful_information/common_terminal_commands.txt"
+alias neomutt='echo "Hey, stop checking your email so much! There'\''s nothing new to see."'
 alias todo="vim ~/Desktop/personal/useful_information/todo_list.txt"
 alias math="vim ~/Desktop/personal/useful_information/math_resources.txt"
 alias bk="vim ~/Desktop/personal/useful_information/useful_links.txt"
