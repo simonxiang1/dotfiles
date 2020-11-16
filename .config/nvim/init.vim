@@ -17,5 +17,5 @@ Plug 'dylanaraps/wal.vim'
 call plug#end()
 
 colorscheme wal 
-set shiftwidth=4 smartindent expandtab
-set rnu nu ic
+set shiftwidth=4 smartindent smartcase expandtab
+set rnu nu 

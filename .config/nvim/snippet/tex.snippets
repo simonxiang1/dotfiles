@@ -389,7 +389,7 @@ endsnippet
 priority 1000
 context "math()"
 snippet S1 "S1" iA
-S^{1} 
+S^1 
 endsnippet
 
 snippet subsec "subsection" bA
@@ -595,6 +595,11 @@ endsnippet
 
 snippet udst "overset" iA
 \underset{$1}{${2:${VISUAL}}} $0
+endsnippet
+
+context "math()"
+snippet ttt "text mode" iA
+\text{${1:${VISUAL}}} $0
 endsnippet
 
 #delta, overset, gamma, \,\text{tskjflskjf}\, im
