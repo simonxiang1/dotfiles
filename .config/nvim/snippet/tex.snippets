@@ -115,13 +115,6 @@ snippet enum "enumerate" bA
 \end{enumerate}
 endsnippet
 
-snippet prop "proposition" bA
-\begin{prop}
-    $1
-\end{prop}
-$0
-endsnippet
-
 snippet item "itemize" bA
 \begin{itemize}
     \item $0
@@ -144,16 +137,6 @@ endsnippet
 
 snippet <= "implied by" Ai
 \impliedby 
-endsnippet
-
-context "math()"
-snippet ceil "ceil" iA
-\left\lceil $1 \right\rceil $0
-endsnippet
-
-context "math()"
-snippet floor "floor" iA
-\left\lfloor $1 \right\rfloor$0
 endsnippet
 
 context "math()"
@@ -245,16 +228,6 @@ endsnippet
 context "math()"
 snippet indl "indefinite integral" wA
 \int ${1:${VISUAL}} \, d$0
-endsnippet
-
-context "math()"
-snippet Re "real part" wA
-\operatorname{Re}$0
-endsnippet
-
-context "math()"
-snippet Im "complex part" wA
-\operatorname{Im}$0
 endsnippet
 
 context "math()"
@@ -373,6 +346,21 @@ snippet >>> "... but with shift" iA
 endsnippet
 
 context "math()"
+snippet RPn "real projective n space" iA
+\R \mathrm P^n
+endsnippet
+
+context "math()"
+snippet RP1 "real projective line" iA
+\R \mathrm P^1
+endsnippet
+
+context "math()"
+snippet RP2 "real projective plane" iA
+\R \mathrm P^2
+endsnippet
+
+context "math()"
 snippet znz "Z/nZ" iA
 \Z /n\Z
 endsnippet
@@ -398,8 +386,9 @@ $0
 endsnippet
 
 snippet prob "unnumbered problem env" bA
+\\subsection{Question $1}
 \\begin{prob}
-    $1
+    $2
 \\end{prob}
 $0
 endsnippet
@@ -599,7 +588,7 @@ endsnippet
 
 context "math()"
 snippet ttt "text mode" iA
-\text{${1:${VISUAL}}} $0
+\text{${1:${VISUAL}}} \ $0
 endsnippet
 
-#delta, overset, gamma, \,\text{tskjflskjf}\, im
+#delta, gamma, im
