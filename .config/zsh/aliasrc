@@ -29,12 +29,12 @@ alias smic="sudo make install clean" #very useful for compiling suckless utiliti
 alias tlmgr='/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode'
 
 #common commands
-alias ls="ls -h --group-directories-first" #cool ls
+alias ls="exa --group-directories-first" #cool ls
 alias grep="grep --color=auto" #pretty grep
-alias lsg="ls | grep -i" #case insensitive search from output
-alias lsa="ls -a" #list all
+alias lsg="exa | grep -i" #case insensitive search from output
+alias lsa="exa --group-directories-first -al " #list all
 alias neomutt='echo "Hey, stop checking your email so much! There'\''s nothing new to see."'
-alias lsl="ls -l" #list long
+alias lsl="exa -lgTL=1 --git" #list long tree
 alias cp="cp -v" #verbose cp
 alias mv="mv -v" #same idea
 alias rm="rm -vI" #I've lost many things before
@@ -77,5 +77,5 @@ alias neomutt='echo "Hey, stop checking your email so much! There'\''s nothing n
 
 #FUNCTIONS
 #moving around
-cs() { cd "$1" && ls; } #cd then ls
-csa() { cd "$1" && ls -a; } #cd then ls -a
+cs() { cd "$1" && exa; } #cd then ls
+csa() { cd "$1" && exa -a; } #cd then ls -a
