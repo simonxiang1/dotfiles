@@ -10,17 +10,14 @@ alias ytv="noglob youtube-dl"
 #git 
 alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME" #bare git repo
 alias gls="git status" #git ls
-alias neomutt='echo "Hey, stop checking your email so much! There'\''s nothing new to see."'
 alias cls="config status"
 alias gcm="git commit -m"
 alias gpos="git remote | xargs -L1 git push --all" #push all remote repos
 alias gad="git add"
 alias gadall="git add -A" #git add all
-alias neomutt='echo "Hey, stop checking your email so much! There'\''s nothing new to see."'
 alias gadupd="git add -u" #git add updated files
 #gacmp and gucmp make these aliases irrelevant, see below
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative" #pretty git log
-alias neomutt='echo "Hey, stop checking your email so much! There'\''s nothing new to see."'
 alias clog="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative" #equality for all
 alias smic="sudo make install clean" #very useful for compiling suckless utilities
 #final form is gacmp - git add commit push and gucmp/cucmp (gacmp with update, config gucmp for dotfiles), see /local/bin
@@ -33,12 +30,10 @@ alias ls="exa --group-directories-first" #cool ls
 alias grep="grep --color=auto" #pretty grep
 alias lsg="exa | grep -i" #case insensitive search from output
 alias lsa="exa --group-directories-first -al " #list all
-alias neomutt='echo "Hey, stop checking your email so much! There'\''s nothing new to see."'
 alias lsl="exa -lgTL=1 --git" #list long tree
 alias cp="cp -v" #verbose cp
 alias mv="mv -v" #same idea
 alias rm="rm -vI" #I've lost many things before
-alias neomutt='echo "Hey, stop checking your email so much! There'\''s nothing new to see."'
 alias z="zathura" #thank the heavens
 alias n="~/.config/vifm/scripts/vifmrun ." #why is it n??
 alias q="exit" #zoomer time
@@ -48,34 +43,17 @@ alias qq="exit" #mega zoomer time
 alias mus="cs ~/Desktop/personal/music" #cs is defined later
 alias vid="cs ~/Desktop/personal/videos" #but it's basically just cd -> ls
 alias web="cs ~/Desktop/personal/website"
-alias neomutt='echo "Hey, stop checking your email so much! There'\''s nothing new to see."'
 alias ut="cs ~/Desktop/academic/ut_austin"
 alias tb="cs ~/Desktop/academic/textbooks"
-alias help="vim ~/Desktop/personal/useful_information/common_terminal_commands.txt"
-alias neomutt='echo "Hey, stop checking your email so much! There'\''s nothing new to see."'
 alias todo="vim ~/Desktop/personal/useful_information/todo_list.txt"
+alias help="vim ~/Desktop/personal/useful_information/common_terminal_commands.txt"
 alias math="vim ~/Desktop/personal/useful_information/math_resources.txt"
 alias bk="vim ~/Desktop/personal/useful_information/useful_links.txt"
 alias blog="vim ~/Desktop/personal/useful_information/blog_posts.txt"
-alias neomutt='echo "Hey, stop checking your email so much! There'\''s nothing new to see."'
+alias neomutt="exit"
 alias zoom="vim ~/Desktop/personal/useful_information/zoom.txt"
-
-alias neomutt='echo "Hey, stop checking your email so much! There'\''s nothing new to see."'
-alias neomutt='echo "Hey, stop checking your email so much! There'\''s nothing new to see."'
-alias neomutt='echo "Hey, stop checking your email so much! There'\''s nothing new to see."'
-alias neomutt='echo "Hey, stop checking your email so much! There'\''s nothing new to see."'
-alias neomutt='echo "Hey, stop checking your email so much! There'\''s nothing new to see."'
-alias neomutt='echo "Hey, stop checking your email so much! There'\''s nothing new to see."'
-alias neomutt='echo "Hey, stop checking your email so much! There'\''s nothing new to see."'
-
-#this is getting ridiculous!
-
-alias neomutt='echo "Hey, stop checking your email so much! There'\''s nothing new to see."'
-alias neomutt='echo "Hey, stop checking your email so much! There'\''s nothing new to see."'
-alias neomutt='echo "Hey, stop checking your email so much! There'\''s nothing new to see."'
-alias neomutt='echo "Hey, stop checking your email so much! There'\''s nothing new to see."'
 
 #FUNCTIONS
 #moving around
-cs() { cd "$1" && exa; } #cd then ls
+cs() { cd "$1" && exa --group-directories-first; } #cd then ls
 csa() { cd "$1" && exa -a; } #cd then ls -a
