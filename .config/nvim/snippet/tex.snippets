@@ -12,18 +12,13 @@
 # A: Automatically trigger snippet
 
 global !p
-texMathZones = ['texMathZone' + x for x in ['A', 'AS', 'B', 'BS', 'C', 'CS', 'D', 'DS', 'E', 'ES', 'F', 'FS', 'G', 'GS', 'H', 'HS', 'I', 'IS', 'J', 'JS', 'K', 'KS', 'L', 'LS', 'DS', 'V', 'W', 'X', 'Y', 'Z', 'AmsA', 'AmsB', 'AmsC', 'AmsD', 'AmsE', 'AmsF', 'AmsG', 'AmsAS', 'AmsBS', 'AmsCS', 'AmsDS', 'AmsES', 'AmsFS', 'AmsGS' ]]
-texIgnoreMathZones = ['texMathText']
-texMathZoneIds = vim.eval('map('+str(texMathZones)+", 'hlID(v:val)')")
-texIgnoreMathZoneIds = vim.eval('map('+str(texIgnoreMathZones)+", 'hlID(v:val)')")
-ignore = texIgnoreMathZoneIds[0]
 def math():
-	synstackids = vim.eval("synstack(line('.'), col('.') - (col('.')>=2 ? 1 : 0))")
-	try:
-		first = next(i for i in reversed(synstackids) if i in texIgnoreMathZoneIds or i in texMathZoneIds)
-		return first != ignore
-	except StopIteration:
-		return False
+	return vim.eval('vimtex#syntax#in_mathzone()') == '1'
+def comment(): 
+	return vim.eval('vimtex#syntax#in_comment()') == '1'
+def env(name):
+	[x,y] = vim.eval("vimtex#env#is_inside('" + name + "')") 
+	return x != '0' and y != '0'
 endglobal
 
 snippet doc "template" b
@@ -88,11 +83,6 @@ snippet '([A-Za-z])(\d)' "auto subscript" wrA
 `!p snip.rv = match.group(1)`_`!p snip.rv = match.group(2)`
 endsnippet
 
-context "math()"
-snippet '([A-Za-z])_(\d\d)' "auto subscript2" wrA
-`!p snip.rv = match.group(1)`_{`!p snip.rv = match.group(2)`}
-endsnippet
-
 snippet eq "equation" w
 \[
 ${1:${VISUAL}}
@@ -110,7 +100,7 @@ snippet / "Fraction" i
 endsnippet
 
 snippet enum "enumerate" bA
-\begin{enumerate}
+\begin{enumerate}[label=(\\$1*)]
     \item $0
 \end{enumerate}
 endsnippet
@@ -165,16 +155,16 @@ snippet lr{ "left\{ right\}" i
 \left\\{ ${1:${VISUAL}} \right\\} $0
 endsnippet
 
-snippet lrb "left\{ right\}" i
-\left\\{ ${1:${VISUAL}} \right\\} $0
-endsnippet
-
 snippet lr[ "left[ right]" i
 \left[ ${1:${VISUAL}} \right] $0
 endsnippet
 
 snippet lra "leftangle rightangle" iA
 \left<${1:${VISUAL}} \right>$0
+endsnippet
+
+snippet lrnm "left right norm" iA
+\left\|${1:${VISUAL}} \right\|$0
 endsnippet
 
 context "math()"
@@ -326,7 +316,7 @@ endsnippet
 
 context "math()"
 snippet || "mid" iA
- \mid 
+\mid 
 endsnippet
 
 context "math()"
@@ -371,10 +361,6 @@ snippet \\\ "setminus" iA
 \setminus 
 endsnippet
 
-snippet difeq "differential equation" iA
-differential equation 
-endsnippet
-
 priority 1000
 context "math()"
 snippet S1 "S1" iA
@@ -387,7 +373,6 @@ $0
 endsnippet
 
 snippet prob "unnumbered problem env" bA
-\\subsection{Question $1}
 \\begin{prob}
     $2
 \\end{prob}
@@ -395,12 +380,12 @@ $0
 endsnippet
 
 context "math()"
-snippet '(?<!\\)(sin|cos|arccot|cot|csc|ln|log|exp|star|phi|perp)' "ln" rwA
+snippet '(?<!\\)(sin|cos|arccot|cot|csc|ln|log|exp|star|phi|perp|xi)' "ln" rwA
 \\`!p snip.rv = match.group(1)`
 endsnippet
 
 context "math()"
-snippet '(?<!\\)(arcsin|arccos|arctan|arccot|arccsc|arcsec|pi|zeta|theta|leq)' "ln" rwA
+snippet '(?<!\\)(arcsin|arccos|arctan|arccot|arccsc|arcsec|pi|zeta|theta|leq|geq)' "ln" rwA
 \\`!p snip.rv = match.group(1)`
 endsnippet
 
@@ -510,7 +495,7 @@ endsnippet
 
 context "math()"
 snippet iso "isomorphism" iA
-\cong
+\simeq
 endsnippet
 
 context "math()"
@@ -525,7 +510,7 @@ endsnippet
 
 context "math()"
 snippet DD "Delta" iA
-\Delta 
+\delta 
 endsnippet
 
 context "math()"
@@ -610,4 +595,4 @@ snippet ttt "text mode" iA
 \text{${1:${VISUAL}}} \ $0
 endsnippet
 
-#delta, gamma, im, xi, enum
+#im
