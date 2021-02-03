@@ -14,9 +14,6 @@ Plug 'sirver/ultisnips'
     let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
     let g:UltiSnipsSnippetDirectories = [$HOME.'/.config/nvim/snippet']
 Plug 'dylanaraps/wal.vim'
-Plug 'preservim/nerdtree'
-    let g:NERDTreeDirArrowExpandable = ''
-    let g:NERDTreeDirArrowCollapsible = ''
 call plug#end()
 
 colorscheme wal 

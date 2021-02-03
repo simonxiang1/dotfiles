@@ -121,8 +121,12 @@ snippet item "itemize" bA
 \end{itemize}
 endsnippet
 
-snippet defn "definition" 
+snippet defn "definition" i
 \textbf{${1:${VISUAL}}} $0
+endsnippet
+
+snippet it "italics" i
+\emph{${1:${VISUAL}}} $0
 endsnippet
 
 snippet def "definition environment" bA
@@ -345,11 +349,13 @@ snippet RPn "real projective n space" iA
 \R \mathrm P^n
 endsnippet
 
+priority 1000
 context "math()"
 snippet RP1 "real projective line" iA
 \R \mathrm P^1
 endsnippet
 
+priority 1000
 context "math()"
 snippet RP2 "real projective plane" iA
 \R \mathrm P^2
@@ -455,6 +461,11 @@ endsnippet
 context "math()"
 snippet suj "sub j" iA
 _j 
+endsnippet
+
+context "math()"
+snippet toj "to j" iA
+^j 
 endsnippet
 
 context "math()"
@@ -579,14 +590,17 @@ snippet figure "general figure" b
 \end{figure}$0
 endsnippet
 
+context "math()"
 snippet eval "evaluating stuff" i
 \left. ${1:${VISUAL}} \right| $0
 endsnippet
 
+context "math()"
 snippet ovst "overset" iA
 \overset{$1}{${2:${VISUAL}}} $0
 endsnippet
 
+context "math()"
 snippet udst "overset" iA
 \underset{$1}{${2:${VISUAL}}} $0
 endsnippet
@@ -596,4 +610,4 @@ snippet ttt "text mode" iA
 \text{${1:${VISUAL}}} \ $0
 endsnippet
 
-#delta, gamma, im
+#delta, gamma, im, xi, enum

@@ -6,4 +6,4 @@ repl=$(grep "<li>" "$HOME/Desktop/personal/website/blog_index.html" | sed 5q | t
 sed -i "s/<!--BLOG-->.*/<!--BLOG-->$repl/g" ~/Desktop/personal/website/index.html
 
 # Syncs local and remote versions of website
-rsync -havzP --delete ~/Desktop/personal/website/. simon@simonxiang.xyz:/var/www/home
+rsync --exclude=".*" -havzP --delete ~/Desktop/personal/website/. simon@simonxiang.xyz:/var/www/home
