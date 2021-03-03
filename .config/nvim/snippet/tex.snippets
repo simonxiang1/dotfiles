@@ -111,6 +111,10 @@ snippet item "itemize" bA
 \end{itemize}
 endsnippet
 
+snippet { "autocomplete braces" wA
+{${1:${VISUAL}}} $0
+endsnippet
+
 snippet defn "definition" i
 \textbf{${1:${VISUAL}}} $0
 endsnippet
@@ -519,6 +523,11 @@ snippet GG "gamma" iA
 endsnippet
 
 context "math()"
+snippet KK "curvature" iA
+\kappa
+endsnippet
+
+context "math()"
 snippet bf "bold" iA
 \mathbf 
 endsnippet
@@ -539,7 +548,7 @@ snippet cat "category" i
 endsnippet
 
 context "math()"
-snippet cov "covering space" i 
+snippet cov "covering space" iA
 \widetilde 
 endsnippet
 
@@ -595,4 +604,6 @@ snippet ttt "text mode" iA
 \text{${1:${VISUAL}}} \ $0
 endsnippet
 
-#im
+snippet todo "text mode" i
+{\color{red}todo:${1:${VISUAL}}} $0
+endsnippet
