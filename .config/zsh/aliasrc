@@ -6,8 +6,8 @@ command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
 
 #youtube-dl
 alias yta="noglob youtube-dl --extract-audio --audio-format mp3 -o '%(title)s.%(ext)s'" #noglob for zsh links, -o for nice file names, a for audio, v for video
-#alias neomutt="exit"
-#alias newsboat="exit"
+alias neomutt="exit"
+alias newsboat="exit"
 alias ytv="noglob youtube-dl"
 #git 
 alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME" #bare git repo
