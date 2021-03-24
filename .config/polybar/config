@@ -89,7 +89,7 @@ modules-right = battery date restart
 tray-position = right
 tray-padding = 2
 
-override-redirect = true
+override-redirect = false
 
 cursor-click = pointer
 cursor-scroll = ns-resize

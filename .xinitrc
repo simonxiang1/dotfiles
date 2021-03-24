@@ -13,9 +13,6 @@ wal -i "/home/simon/Desktop/personal/anime/wallpaper_selections"
 # autostart mpd
 mpd &
 
-# polybar??
-$(sleep 0.5s && "/home/simon/.config/polybar/launch.sh") &
-
 # start dwm
 exec dwm
 
