@@ -329,8 +329,14 @@ snippet ** "cdot" iA
 \cdot 
 endsnippet
 
+
 context "math()"
-snippet >>> "... but with shift" iA
+snippet WW "wedge" iA
+\wedge 
+endsnippet
+context "math()"
+
+snippet ... "... but with shift" iA
 \cdots 
 endsnippet
 
@@ -524,13 +530,13 @@ snippet KK "curvature" iA
 endsnippet
 
 context "math()"
-snippet bf "bold" iA
-\mathbf 
+snippet OO "omega" iA
+\omega
 endsnippet
 
 context "math()"
-snippet OO "omega" iA
-\Omega
+snippet bf "bold" iA
+\mathbf 
 endsnippet
 
 context "math()"
@@ -567,7 +573,7 @@ endsnippet
 snippet image "hw image" b
 \begin{figure}[H]
 \centering
- \includegraphics[width=\linewidth]{$1}
+ \includegraphics[width=0.4\linewidth]{figures//$1}
 \end{figure}$0
 endsnippet
 
