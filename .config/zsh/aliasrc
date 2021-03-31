@@ -6,8 +6,6 @@ command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
 
 #youtube-dl
 alias yta="noglob youtube-dl --extract-audio --audio-format mp3 -o '%(title)s.%(ext)s'" #noglob for zsh links, -o for nice file names, a for audio, v for video
-alias neomutt="exit"
-alias newsboat="exit"
 alias ytv="noglob youtube-dl"
 #git 
 alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME" #bare git repo
@@ -53,6 +51,8 @@ alias math="vim ~/Desktop/personal/useful_information/math_resources.txt"
 alias bk="vim ~/Desktop/personal/useful_information/useful_links.txt"
 alias blog="vim ~/Desktop/personal/useful_information/blog_posts.txt"
 alias zoom="vim ~/Desktop/personal/useful_information/zoom.txt"
+alias neomutt="exit"
+alias newsboat="exit"
 
 #FUNCTIONS
 #moving around
