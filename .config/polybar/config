@@ -95,7 +95,7 @@ cursor-scroll = ns-resize
 
 [module/dwm]
 type = internal/dwm
-format = <label-tags> <label-title>
+format = <label-tags> <label-layout> <label-floating> <label-title>
 ;socket-path = /tmp/dwm.sock
 
 enable-tags-click = true
