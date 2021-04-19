@@ -16,6 +16,7 @@ Plug 'sirver/ultisnips'
 Plug 'dylanaraps/wal.vim'
 call plug#end()
 
+vnoremap <C-c> "+y
 colorscheme wal 
 set shiftwidth=4 smartindent smartcase expandtab
 set rnu nu
