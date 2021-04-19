@@ -101,6 +101,7 @@ endsnippet
 
 snippet enum "enumerate" bA
 \begin{enumerate}[label=(\\$1*)]
+\setlength\itemsep{-.2em}
     \item $0
 \end{enumerate}
 endsnippet
@@ -256,7 +257,7 @@ endsnippet
 
 context "math()"
 snippet NN "n" iA
-\N
+\nabla
 endsnippet
 
 context "math()"
@@ -536,7 +537,7 @@ endsnippet
 
 context "math()"
 snippet OO "omega" iA
-\omega
+\Omega
 endsnippet
 
 context "math()"
@@ -578,7 +579,7 @@ endsnippet
 snippet image "hw image" b
 \begin{figure}[H]
 \centering
- \includegraphics[width=0.4\linewidth]{figures/$1}
+ \includegraphics[width=0.6\linewidth]{figures/$1}
 \end{figure}$0
 endsnippet
 
