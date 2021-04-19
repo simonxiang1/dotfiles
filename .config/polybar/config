@@ -59,8 +59,8 @@ monitor-strict = false
 width = 98%
 height = 30
 offset-x = 1%
-offset-y = 0.8%
-;offset-y = 0%
+;offset-y = 0.8%
+offset-y = 0%
 radius = 0
 fixed-center = true
 
@@ -80,7 +80,7 @@ font-3 = Font Awesome 5 Brands:size=10;2
 font-4 = Source Han Sans:size=11;2
 font-5 = Material Icons:size=11;4
 
-modules-left = dwm
+modules-left = pad dwm
 modules-center = mpd
 modules-right = battery date restart 
 
