@@ -27,7 +27,7 @@ fileviewer *.pdf
         \ vifmimg pdfpreview %px %py %pw %ph %c
         \ %pc 
         \ vifmimg clear
-        " \ pdftotext -nopgbrk %c -
+        \ pdftotext -nopgbrk %c -
 
 " djvu
 filextype *.djvu
@@ -35,6 +35,12 @@ filextype *.djvu
         \ zathura %f,
         \ {View in apvlv}
         \ apvlv %f,
+" preview
+"fileviewer *.djvu
+        "\ vifmimg pdfpreview %px %py %pw %ph %c
+        "\ %pc 
+        "\ vifmimg clear
+        "\ pdftotext -nopgbrk %c -
 
 " html
 filextype *.html *.htm
@@ -45,7 +51,7 @@ filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
         \ {View in sxiv}
         \ sxiv -ia %f &,
 " preview
-fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.xpm         
+fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm         
         \ vifmimg draw %px %py %pw %ph %c
         \ %pc
         \ vifmimg clear
