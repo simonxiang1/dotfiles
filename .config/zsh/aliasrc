@@ -55,6 +55,7 @@ alias zoom="vim ~/Desktop/personal/useful_information/zoom.txt"
 alias neomutt="exit"
 alias newsboat="exit"
 
+
 #FUNCTIONS
 #moving around
 cs() { cd "$1" && exa --group-directories-first; } #cd then ls
