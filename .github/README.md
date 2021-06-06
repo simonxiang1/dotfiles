@@ -11,7 +11,7 @@ Welcome to my setup! Details below.
 ## Setup
 - OS: Arch Linux
 - Shell: zsh
-- Window Manager: dwm
+- Window manager: dwm
 - Terminal emulator: st
 - Bar: polybar
 - Editor: neovim
@@ -25,10 +25,12 @@ Welcome to my setup! Details below.
 - Wallpaper: xwallpaper
 - RSS reader: newsboat
 - Compositor: picom
-- PDF Viewer: zathura
+- PDF viewer: zathura
 
 ### More information
 - Scripts I've written (mostly git stuff) are in `~/.local/bin`
 - There are separate repositories for my [dwm](https://github.com/simonxiang1/dwm) and [st](https://github.com/simonxiang1/st) setups
+
+_______
 
 This project is licensed under the terms of the GNU General Public License v3.0.
