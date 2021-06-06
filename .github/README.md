@@ -1,4 +1,4 @@
-#Dotfiles
+# Dotfiles
 Welcome to my setup! Details below.
 ![alt text](2021-06-06-144052_1920x1080_scrot.png)
 ![alt text](2020-10-25-192136_1920x1080_scrot.png)
@@ -15,6 +15,7 @@ Welcome to my setup! Details below.
 - Terminal emulator: st
 - Bar: polybar
 - Editor: neovim
+- Font: mononoki
 - Color scheme: pywal
 - Music player: ncmpcpp+mpd
 - Email: neomutt
