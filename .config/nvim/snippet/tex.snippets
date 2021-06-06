@@ -108,6 +108,7 @@ endsnippet
 
 snippet item "itemize" bA
 \begin{itemize}
+\setlength\itemsep{-.2em}
     \item $0
 \end{itemize}
 endsnippet
@@ -502,7 +503,7 @@ endsnippet
 
 context "math()"
 snippet iso "isomorphism" iA
-\cong
+\simeq 
 endsnippet
 
 context "math()"
@@ -537,12 +538,12 @@ endsnippet
 
 context "math()"
 snippet OO "omega" iA
-\omega
+\Omega
 endsnippet
 
 context "math()"
 snippet SS "sigma" iA
-\sigma
+\Sigma
 endsnippet
 
 context "math()"
@@ -595,6 +596,15 @@ snippet figure "general figure" b
 \caption{$2}
 \label{$1}
 \end{figure}$0
+endsnippet
+
+
+#ipxg for gothic
+
+snippet jpn "japanese" 
+\\begin{CJK}{UTF8}{ipxm}
+    $1
+\\end{CJK}$0
 endsnippet
 
 context "math()"
