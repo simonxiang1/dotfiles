@@ -31,3 +31,4 @@ Welcome to my setup! Details below.
 - Scripts I've written (mostly git stuff) are in `~/.local/bin`
 - There are separate repositories for my [dwm](https://github.com/simonxiang1/dwm) and [st](https://github.com/simonxiang1/st) setups
 
+This project is licensed under the terms of the GNU General Public License v3.0.
