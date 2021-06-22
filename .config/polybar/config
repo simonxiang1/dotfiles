@@ -82,8 +82,8 @@ modules-left = pad dwm
 modules-center = mpd
 modules-right = battery blur date restart
 
-tray-position = right
-tray-padding = 2
+;tray-position = right
+;tray-padding = 2
 
 override-redirect = false
 
