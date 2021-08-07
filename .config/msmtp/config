@@ -1,0 +1,22 @@
+account simon@simonxiang.xyz
+host mail.simonxiang.xyz
+port 587
+from simon@simonxiang.xyz
+user simon@simonxiang.xyz
+passwordeval "pass simon@simonxiang.xyz"
+auth on
+tls on
+tls_trust_file	/etc/ssl/certs/ca-certificates.crt
+logfile /home/simon/.config/msmtp/msmtp.log
+
+account simonxiang@utexas.edu
+host smtp.gmail.com
+port 587
+from simonxiang@utexas.edu
+user simonxiang@utexas.edu
+passwordeval "pass simonxiang@utexas.edu"
+auth on
+tls on
+tls_trust_file	/etc/ssl/certs/ca-certificates.crt
+logfile /home/simon/.config/msmtp/msmtp.log
+
