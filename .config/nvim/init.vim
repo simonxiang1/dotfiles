@@ -14,6 +14,7 @@ Plug 'sirver/ultisnips'
     let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
     let g:UltiSnipsSnippetDirectories = [$HOME.'/.config/nvim/snippet']
 Plug 'dylanaraps/wal.vim'
+Plug 'turbio/bracey.vim'
 call plug#end()
 
 vnoremap <C-c> "+y
