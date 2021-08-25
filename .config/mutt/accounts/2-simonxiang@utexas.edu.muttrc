@@ -19,7 +19,7 @@ bind index gg first-entry
 unmailboxes *
 unalternates *
 unset signature
-macro index o "<shell-escape>mbsync simonxiang@utexas.edu<enter>" "run mbsync to sync simonxiang@utexas.edu"
+macro index o "<shell-escape>mbsync -a<enter>" "sync all inboxes"
 
 #mailboxes "=Confirmation" "=Conversations" "=INBOX" "=[Gmail]/All Mail" "=[Gmail]/Drafts" "=[Gmail]/Important" "=[Gmail]/Sent Mail" "=[Gmail]/Spam" "=[Gmail]/Starred" "=[Gmail]/Trash"
 mailboxes "=INBOX" "=Conversations" "=Confirmation" "=[Gmail]/Drafts" "=[Gmail]/Sent\ Mail" "=[Gmail]/Trash"
