@@ -15,9 +15,11 @@ Plug 'sirver/ultisnips'
     let g:UltiSnipsSnippetDirectories = [$HOME.'/.config/nvim/snippet']
 Plug 'dylanaraps/wal.vim'
 Plug 'turbio/bracey.vim'
+Plug 'preservim/nerdcommenter'
 call plug#end()
 
 vnoremap <C-c> "+y
 colorscheme wal 
+filetype plugin on
 set shiftwidth=4 smartindent smartcase expandtab
 set rnu nu
