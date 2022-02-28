@@ -206,10 +206,10 @@ snippet // "fraction" iA
 \\frac{$1}{$2}$0
 endsnippet
 
-context "math()"
-snippet '((\d+)|(\d*)(\\)?([A-Za-z]+)((\^|_)(\{\d+\}|\d))*)/' "Fraction" wrA
-\\frac{`!p snip.rv = match.group(1)`}{$1}$0
-endsnippet
+#context "math()"
+#snippet '((\d+)|(\d*)(\\)?([A-Za-z]+)((\^|_)(\{\d+\}|\d))*)/' "Fraction" wrA
+#\\frac{`!p snip.rv = match.group(1)`}{$1}$0
+#endsnippet
 
 context "math()"
 snippet dint "definite integral" wA
@@ -513,7 +513,7 @@ endsnippet
 
 context "math()"
 snippet DD "Delta" iA
-\delta 
+\Delta 
 endsnippet
 
 context "math()"
