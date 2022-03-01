@@ -52,7 +52,7 @@ alias recipe="vim ~/Desktop/personal/useful_information/recipes.txt"
 alias bk="vim ~/Desktop/personal/useful_information/useful_links.txt"
 alias blog="vim ~/Desktop/personal/useful_information/blog_posts.txt"
 alias zoom="vim ~/Desktop/personal/useful_information/zoom.txt"
-alias newsboat="exit"
+#alias newsboat="exit"
 #alias neomutt="exit"
 
 

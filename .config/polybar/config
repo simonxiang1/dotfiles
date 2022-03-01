@@ -56,9 +56,11 @@ tag-urgent-background = ${xrdb:polybar.tag-urgent-background}
 monitor = ${env:MONITOR:}
 monitor-fallback = eDP1
 monitor-strict = false
-width = 98%
+#width = 98% for round corners
+width = 100%
 height = 30
-offset-x = 1%
+#offset-x = 1% for round corners
+offset-x = 0%
 ;offset-y = 0.8%
 offset-y = 0%
 radius = 0
@@ -78,9 +80,9 @@ font-1 = FontAwesome:style=Regular:pixelsize=12;2
 font-2 = mononoki Nerd Font Mono:style=Regular:size=17;2
 font-3 = Source Han Sans:size=11;2
 
-modules-left = pad dwm
+modules-left = pad pad dwm
 modules-center = mpd
-modules-right = battery blur date restart
+modules-right = battery blur date restart pad 
 
 ;tray-position = right
 ;tray-padding = 2
@@ -174,6 +176,7 @@ type = internal/xwindow
 
 [module/battery]
 type = internal/battery
+exec = ~/.config/polybar/low_battery.sh
 battery = BAT0
 adapter = ADP1
 full-at = 99 
