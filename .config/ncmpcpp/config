@@ -3,3 +3,6 @@ visualizer_output_name = "my_fifo"
 visualizer_in_stereo = "yes"
 visualizer_type = "spectrum"
 visualizer_look = "||" # ig this is outdated huh...
+
+execute_on_song_change = notify-send "Now Playing" "$(mpc current)"
+
