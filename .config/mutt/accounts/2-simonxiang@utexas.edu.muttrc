@@ -22,7 +22,7 @@ unset signature
 macro index o "<shell-escape>mbsync -a<enter>" "sync all inboxes"
 
 #mailboxes "=Confirmation" "=Conversations" "=INBOX" "=[Gmail]/All Mail" "=[Gmail]/Drafts" "=[Gmail]/Important" "=[Gmail]/Sent Mail" "=[Gmail]/Spam" "=[Gmail]/Starred" "=[Gmail]/Trash"
-mailboxes "=INBOX" "=Conversations" "=Confirmation" "=[Gmail]/Drafts" "=[Gmail]/Sent\ Mail" "=[Gmail]/Trash"
+mailboxes "=INBOX" "=Conversations" "=Confirmation" "=Internships" "=[Gmail]/Drafts" "=[Gmail]/Sent\ Mail" "=[Gmail]/Trash"
 macro index,pager gi "<change-folder>=INBOX<enter>" "go to inbox"
 macro index,pager Mi ";<save-message>=INBOX<enter>" "move mail to inbox"
 macro index,pager Ci ";<copy-message>=INBOX<enter>" "copy mail to inbox"
@@ -34,6 +34,9 @@ macro index,pager Cc ";<copy-message>=Conversations<enter>" "copy mail to conver
 macro index,pager gC "<change-folder>=Confirmation<enter>" "go to confirmation" 
 macro index,pager MC ";<save-message>=Confirmation<enter>" "move mail to confirmation" 
 macro index,pager CC ";<copy-message>=Confirmation<enter>" "copy mail to confirmation"
+macro index,pager gI "<change-folder>=Internships<enter>" "go to internships" 
+macro index,pager MI ";<save-message>=Internships<enter>" "move mail to internships" 
+macro index,pager CI ";<copy-message>=Internships<enter>" "copy mail to internships"
 macro index,pager gd "<change-folder>=[Gmail]/Drafts<enter>" "go to drafts"
 macro index,pager Md ";<save-message>=[Gmail]/Drafts<enter>" "move mail to drafts"
 macro index,pager Cd ";<copy-message>=[Gmail]/Drafts<enter>" "copy mail to drafts"
