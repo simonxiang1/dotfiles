@@ -9,11 +9,11 @@ echo Manually installed programs: $(pacman -Qqe | wc -l) >> /home/simon/Desktop/
 # Possibly back up home directory to phone (if I can fix the dam permission issues)
 
 # Check if hard drive connected
-if [ -d "/run/media/simon/info" ]; then
+if [ -d "~/mnt" ]; then
     echo Hard drive connected. Generating local backup...
     rsync -havP ~/ /run/media/simon/info
 fi
 
 # Remote backup
 echo Generating remote backup...
-rsync -havzP --delete ~/. simon@simonxiang.xyz:/home/simon/backup
+rsync -havzP --delete ~/Desktop simon@simonxiang.xyz:/home/simon/backup
