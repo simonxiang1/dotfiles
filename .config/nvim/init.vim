@@ -4,6 +4,9 @@ Plug 'lervag/vimtex'
     let g:vimtex_view_method='zathura'
     let g:vimtex_quickfix_mode=0
     let g:vimtex_compiler_progname='nvr'
+    "let g:vimtex_compiler_latexmk_engines = {
+    "\ '_'                : '-xelatex',
+    "\}
 Plug 'KeitaNakamura/tex-conceal.vim'
     set conceallevel=1
     let g:tex_conceal='abdmg'
