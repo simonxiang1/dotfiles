@@ -145,6 +145,11 @@ snippet () "left( right)" iA
 \left( ${1:${VISUAL}} \right) $0
 endsnippet
 
+context "math()"
+snippet comp "complement" iA
+^c
+endsnippet
+
 snippet lr( "left( right)" i
 \left( ${1:${VISUAL}} \right) $0
 endsnippet
@@ -498,7 +503,7 @@ endsnippet
 
 context "math()"
 snippet iso "isomorphism" iA
-\simeq 
+\cong 
 endsnippet
 
 context "math()"
@@ -528,7 +533,7 @@ endsnippet
 
 context "math()"
 snippet LL "lambda" iA
-\lambda
+\Lambda
 endsnippet
 
 context "math()"
@@ -580,7 +585,9 @@ endsnippet
 snippet image "hw image" b
 \begin{figure}[H]
 \centering
- \includegraphics[width=0.6\linewidth]{hw_figures/$1}
+ \includegraphics[width=0.6\linewidth]{hw_figures/$1.png}
+\caption{$2}
+\label{$1}
 \end{figure}$0
 endsnippet
 
