@@ -21,48 +21,6 @@ def env(name):
 	return x != '0' and y != '0'
 endglobal
 
-snippet doc "template" b
-\documentclass{article}
-\usepackage{amsmath, amssymb, amsthm}
-\newtheorem{theorem}{Theorem}
-\newtheorem{definition}{Definition}
-\newtheorem{lemma}{Lemma}
-\renewcommand\qedsymbol{$\boxtimes$}
-\begin{document}
-    $0
-\end{document}
-endsnippet
-
-snippet titlepage "title page"
-\begin{titlepage}
-    \begin{center}
-        \vspace*{1cm}
- 
-        \Huge
-        \textbf{$1}
- 
-        \vspace{0.5cm}
-        \LARGE
-    	$2
-
-        \vspace{1.5cm}
- 
-        \textbf{Simon Xiang}
- 
-        \vfill
-  
-        \vspace{0.8cm}
- 
-        \Large
-    	$3\\\
-        University of Texas at Austin\\\
-        \today
- 
-    \end{center}
-\end{titlepage}
-$0
-endsnippet
-
 snippet beg "begin{} / end{}" bA
 \\begin{$1}
     $2
@@ -452,6 +410,11 @@ _i
 endsnippet
 
 context "math()"
+snippet toi "to the i" iA
+^i 
+endsnippet
+
+context "math()"
 snippet suj "sub j" iA
 _j 
 endsnippet
@@ -462,6 +425,16 @@ snippet toj "to j" iA
 endsnippet
 
 context "math()"
+snippet suk "sub k" iA
+_k 
+endsnippet
+
+context "math()"
+snippet tok "to k" iA
+^k 
+endsnippet
+
+context "math()"
 snippet sun "sub n" iA
 _n 
 endsnippet
@@ -469,11 +442,6 @@ endsnippet
 context "math()"
 snippet ton "to the n" iA
 ^n 
-endsnippet
-
-context "math()"
-snippet toi "to the i" iA
-^i 
 endsnippet
 
 context "math()"
@@ -517,13 +485,18 @@ snippet BB "beta" iA
 endsnippet
 
 context "math()"
+snippet CC "chi" iA
+\chi 
+endsnippet
+
+context "math()"
 snippet DD "Delta" iA
 \Delta 
 endsnippet
 
 context "math()"
-snippet GG "gamma" iA
-\gamma 
+snippet GG "Gamma" iA
+\Gamma 
 endsnippet
 
 context "math()"
@@ -532,7 +505,12 @@ snippet KK "curvature" iA
 endsnippet
 
 context "math()"
-snippet LL "lambda" iA
+snippet LL "mathcal" iA
+\mathcal 
+endsnippet
+
+context "math()"
+snippet ll "lambda" iA
 \Lambda
 endsnippet
 
@@ -625,7 +603,7 @@ snippet udst "overset" iA
 endsnippet
 
 context "math()"
-snippet ttt "text mode" iA
+snippet te "text mode" i
 \text{${1:${VISUAL}}} $0
 endsnippet
 
